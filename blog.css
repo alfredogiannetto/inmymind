@@ -155,7 +155,6 @@
     background-size: cover;
     background-position: center;
     margin: 80px auto 0 auto;
-    padding-top: 80px; 
     background-color: none;
     overflow: hidden;
 }
@@ -166,7 +165,7 @@
     }
 }
 
-@media (width < 1800px) {
+@media (width < 1900px) {
     .paradiso-box {
         height: 300px;
     }
