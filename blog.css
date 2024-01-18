@@ -166,9 +166,9 @@
     }
 }
 
-@media (width < 1700px) {
+@media (width < 1800px) {
     .paradiso-box {
-        height: 200px;
+        height: 300px;
     }
 }
 
