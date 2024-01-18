@@ -166,12 +166,20 @@
     }
 }
 
+@media (width < 1700px) {
+    .paradiso-box {
+        height: 200px;
+    }
+}
+
 @media (width < 1300px) {
     .paradiso-box {
         width: calc(100vw - 80px);
         height: 200px;
     }
 }
+
+
 
 /* ------------------------ BLOG-EFFETTIVO ------------------------ */
 
