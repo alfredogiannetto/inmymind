@@ -150,7 +150,7 @@
 
 .paradiso-box {
     background-image: url(Server/Archivio/Sfondi/gradient2.gif);
-    height: 400px;
+    height: 500px;
     width: calc(100vw - 80px);
     background-size: cover;
     background-position: center;
@@ -167,14 +167,14 @@
 
 @media (width < 1810px) {
     .paradiso-box {
-        height: 300px;
+        height: 400px;
     }
 }
 
 @media (width < 1300px) {
     .paradiso-box {
         width: calc(100vw - 80px);
-        height: 200px;
+        height: 300px;
     }
 }
 
