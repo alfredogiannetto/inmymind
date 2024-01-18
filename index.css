@@ -245,10 +245,12 @@ div.stocazzo {
 /* ------------------------ PIE ------------------------ */
 
 .pie {
-    margin: 0 auto 0 auto;
-    width: 97%;
+    display: block;
+    margin: 400px auto 0 auto;
+    max-width: 1810px;
     height: 350px;
-    background-color: #6699CC;
+    /* background-color: rgb(58, 48, 128); */
+    background-color: rgb(88, 119, 88);
 }
 
 .pie div {
@@ -265,12 +267,12 @@ div.stocazzo {
     align-items: flex-end;
 }
 
-.nome-sito,
-.argomenti,
-.social,
-.pagine,
-.collegamenti,
-.cerca {
+.pie .nome-sito,
+.pie .argomenti,
+.pie .social,
+.pie .pagine,
+.pie .collegamenti,
+.pie .cerca {
     height: 89%;
     display: inline-block;
     color: white;
@@ -279,40 +281,56 @@ div.stocazzo {
     border: none;
 }
 
-.argomenti,
-.social,
-.pagine {
+.pie .argomenti,
+.pie .social,
+.pie .pagine,
+.pie .collegamenti {
+    white-space: nowrap;
+}
+
+.pie .argomenti,
+.pie .social,
+.pie .pagine {
     margin-right: 50px;
 }
 
-.nome-sito {
+.pie .nome-sito {
     margin-right: 100px;
 }
 
-.nome-sito div,
-.argomenti div,
-.social div,
-.pagine div,
-.collegamenti div,
-.cerca div {
+.pie .nome-sito div,
+.pie .argomenti div,
+.pie .social a,
+.pie .pagine a,
+.pie .collegamenti a,
+.pie .cerca div {
     font-size: 18px;
 }
 
-.inmymind {
-    font-size: 31px;
+.pie .social a,
+.pie .pagine a,
+.pie .collegamenti a {
+    display: block;
+    text-decoration: none;
+    color: white;
 }
 
-.sottotitolo {
+.pie .inmymindd {
+    font-size: 31px;
+    color: white;
+}
+
+.pie .sottotitolo {
     position: relative;
     font-size: 18px;
 }
 
-.nome-sito {
+.pie .nome-sito {
     line-height: 27px;
     width: 45%;
 }
 
-.titolo {
+.pie .titolo {
     font-size: 23px;
 }
 
@@ -322,25 +340,41 @@ div.stocazzo {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: var(--bianco-sporco-modnotte);
 }
 
-.cerca {
+.pie .cerca {
     width: 30%;
     margin-left: 100px;
 }
 
-.barra-cerca {
+.pie .barra-cerca {
+    width: calc(100% - (14px + 18px));
+    border: 0px hidden #ccc;
+    font-family: 'pp_mondwestregular';
+    outline: none;
     background-color: white;
-    padding: 12px;
-    color: rgb(206, 206, 206);
+    padding: 14px 14px 14px 18px;
+    color: var(--grigio-scuro);
+    font-size: 18px;
 }
 
-.avvisi-box {
+::placeholder {
+    color: var(--grigio-scuro);
+    opacity: 1; /* Firefox */
+  }
+  
+  ::-ms-input-placeholder { /* Edge 12 -18 */
+    color: var(--grigio-scuro);
+  }
+
+
+.pie .avvisi-box {
     height: 60vh;
     width: 100vw;
 }
 
-.avvisi {
+.pie .avvisi {
     display: block;
     height: 200px;
     width: 50%;
@@ -349,7 +383,7 @@ div.stocazzo {
     margin: 0 auto 0 auto;
 }
 
-.risposta {
+.pie .risposta {
     height: 60px;
     display: grid;
     grid-template-columns: 75% 24%;
@@ -357,21 +391,24 @@ div.stocazzo {
     padding: 50px 0 0 0;
 }
 
-.domanda {
+.pie .domanda {
     font-size: 30px;
 }
 
-.mail {
+.pie .mail {
     font-size: 19px;
     padding: 18px;
     background-color: white;
-    color: #BABABA;
 }
 
-.copia {
+.pie .copia {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(156, 156, 156);
     font-size: 20px;
 }
+
+
+
+
