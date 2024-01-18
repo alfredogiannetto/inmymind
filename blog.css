@@ -1,26 +1,57 @@
   .blog1 {
-    width: 1810px;
+    width: calc(100vw - 80px);
     margin: 0 auto 0 auto;
     background-color: none;
 }
 
+@media (width > 1810px) {
+    .blog1 {
+        width: 1810px;
+        margin: 0 auto 0 auto;
+        background-color: none;
+    }
+}
+
 .blog2 {
-    max-width: 1810px;
+    width: calc(100vw - 80px);
     margin: 0 auto 0 auto;
     background-color: none;
 }
+
+@media (width > 1810px) {
+    .blog2 {
+        width: 1810px;
+        margin: 0 auto 0 auto;
+        background-color: none;
+    }
+}
+
 /* ------------------------ NAVBAR ------------------------ */
 
 .navbar {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 1810px;
+    width: calc(100vw - 80px);
     margin: 0 auto 0 auto;
     background-color: none;
     height: 80px;
     position: fixed;
+    top: 0;
     z-index: 999;
-    background-color: var(--grigio-scuro-modnotte);
+}
+
+@media (width > 1810px) {
+    .navbar {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 1810px;
+        margin: 0 auto 0 auto;
+        background-color: none;
+        height: 80px;
+        position: fixed;
+        top: 0;
+        z-index: 999;
+    }
 }
 
 .navbar2 {
@@ -30,8 +61,8 @@
     justify-content: end;
     height: 100%;
     background-color: none;
-/*     border: solid red 3px;
- */}
+/*     border: solid red 3px;*/
+}
 
 .home,
 .work,
@@ -119,14 +150,27 @@
 
 .paradiso-box {
     background-image: url(Server/Archivio/Sfondi/gradient2.gif);
-    height: 500px;
-    width: 1810px;
+    height: 400px;
+    width: calc(100vw - 80px);
     background-size: cover;
     background-position: center;
-    margin: 0px auto;
+    margin: 80px auto 0 auto;
     padding-top: 80px; 
     background-color: none;
     overflow: hidden;
+}
+
+@media (width > 1810px) {
+    .paradiso-box {
+        width: 1810px;
+    }
+}
+
+@media (width < 1300px) {
+    .paradiso-box {
+        width: calc(100vw - 80px);
+        height: 200px;
+    }
 }
 
 /* ------------------------ BLOG-EFFETTIVO ------------------------ */
@@ -138,6 +182,12 @@
     grid-template-columns: 71.5% 27%;
     gap: 1.5%;
     overflow: hidden;
+}
+
+@media (width < 1300px) {
+    .blog-effettivo{
+        display: block;
+    }
 }
 
 .sinistra {
