@@ -23,9 +23,9 @@ body {
 
 @font-face {
     font-family: 'pp_mondwestregular';
-    src: url('ppmondwest-regular-webfont.woff2') format('woff2'),
-    url('ppmondwest-regular-webfont.woff') format('woff'),
-    url('PPMondwest-Regular.otf') format('otf');
+    src: url('ppmondwest.woff2') format('woff2'),
+    url('ppmondwest.woff') format('woff'),
+    url('ppmondwest.otf') format('otf');
     font-style: normal;
 }
 
