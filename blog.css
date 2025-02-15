@@ -1,4 +1,13 @@
-  .blog1 {
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ .blog1 {
     width: calc(100vw - 80px);
     margin: 0 auto 0 auto;
     background-color: none;
@@ -149,7 +158,7 @@
 /* ------------------------ IMMAGINE ------------------------ */
 
 .paradiso-box {
-    background-image: url(Server/Archivio/Sfondi/gradient2.gif);
+    background-image: url(Server/Archivio/Sfondi/gradient.gif);
     height: 350px;
     width: calc(100vw - 80px);
     background-size: cover;
@@ -421,9 +430,10 @@
     display: block;
     margin: 400px auto 0 auto;
     max-width: 1810px;
+    width: calc(100vw - 80px);
     height: 350px;
-    /* background-color: rgb(58, 48, 128); */
-    background-color: rgb(88, 119, 88);
+    background-color: var(--azzurro-chiaro);
+    opacity: 90%;
 }
 
 .pie div {
@@ -464,11 +474,11 @@
 .pie .argomenti,
 .pie .social,
 .pie .pagine {
-    margin-right: 50px;
+    margin-right: 45px;
 }
 
 .pie .nome-sito {
-    margin-right: 100px;
+    margin-right: 90px;
 }
 
 .pie .nome-sito div,
@@ -518,7 +528,7 @@
 
 .pie .cerca {
     width: 30%;
-    margin-left: 100px;
+    margin-left: 50px;
 }
 
 .pie .barra-cerca {

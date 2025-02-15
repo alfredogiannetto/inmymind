@@ -1,0 +1,51 @@
+/* ------------------------ TUTTI GLI ELEMENTI ------------------------ */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+/* ------------------------ BODY ------------------------ */
+
+body {
+    font-family: 'pp_mondwestregular';
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--grigio-scuro-modnotte);
+}
+
+/* ------------------------ collegamento FONT ------------------------ */
+
+@font-face {
+    font-family: 'pp_mondwestregular';
+    src: url('ppmondwest.woff2') format('woff2'),
+    url('ppmondwest.woff') format('woff'),
+    url('ppmondwest.otf') format('otf');
+    font-style: normal;
+}
+
+/* ------------------------ LIGHT mode ------------------------ */
+
+:root  {
+    --grigio-chiaro: rgb(227, 227, 227);
+    --grigio-scuro: rgb(183, 183, 183);
+    --azzurro-chiaro: #6699CC;
+    --viola-scuro: #4A1259;
+    --blu-scuro: #0A1926;
+    --blu-chiaro: #254A59;
+    --rosa-chiaro: #A68692;
+}
+
+/* ------------------------ DARK mode ------------------------ */
+
+:root  {
+    --grigio-scuro-modnotte: rgb(24, 26, 27);
+    --grigio-chiaro-modnotte: #AAA398;
+    --bianco-sporco-modnotte: rgb(232, 230, 227);
+    --grigio-scuro2-modenotte: #282B2D;
+}

@@ -1,0 +1,578 @@
+
+
+
+
+
+/* ------------------------ NAVBAR ------------------------ */
+
+.navbar {
+    position: absolute;
+    text-align: center;
+    list-style-type: none;
+    width: calc(100vw - 40*2px);
+    padding: 40px 40px 0 40px;
+    height: fit-content;
+    /* background-color: var(--azzurro-chiaro); */
+    text-rendering: auto;
+    -webkit-font-smoothing: auto;
+    -moz-osx-font-smoothing: auto;
+}
+
+.home,
+.work,
+.about,
+.blog {
+    font-size: 21px;
+    display: inline-block;
+    width: auto;
+    margin: 0;
+    padding: 20px 15px 20px 15px;
+    text-decoration: none;
+    color: black;
+    opacity: 80%;
+}
+
+.home:hover span,
+.work:hover span,
+.about:hover span,
+.blog:hover span{
+    display: none;
+}
+
+.home:hover::before{
+    content: 'h0m3';
+}
+
+.work:hover::before{
+    content: 'w0rK';
+}
+
+.about:hover::before{
+    content: '4b0ut';
+}
+
+.blog:hover:before{
+    content: 'bL0g';
+}
+
+
+
+.home:hover,
+.about:hover{
+    transform: rotate(8deg);
+}
+
+
+.work:hover,
+.blog:hover {
+    transform: rotate(-8deg);
+}
+
+/* ------------------------ BACKGROUND/01 ------------------------ */
+
+.background1 {
+    background-color: var(--azzurro-chiaro);
+    /* background-image: linear-gradient(var(--blu-scuro), var(--rosa-chiaro)); */
+    /* background-image: url(cielo.jpeg); */
+    background-image: url(Server/Archivio/Sfondi/clouds2.gif);
+    background-position: contain;
+    background-size: 100% 100%;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+}
+
+.background1 p {
+    z-index: 0;
+    text-align: center;
+    font-size: 270px;
+    color: black;
+    opacity: 80%;
+}
+
+.background1 .img1 {
+    display: none;
+    position: absolute;
+    top: 13%;
+    left: 25%;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+.play-icon {
+    left: 70px;
+    bottom: 70px;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+}
+
+.alfredino {
+    display: block;
+    z-index: 0;
+    width: 25%;
+    position: absolute;
+    top: 18%;
+    left: 9%;
+    transform: rotate(-5deg);
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    transition: all 0.6s ease-in-out;
+
+}
+
+.alfredino:hover {
+    display: block;
+    z-index: 1;
+    width: 30%;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    transform: rotate(3deg);
+    transition: all 0.6s ease-in-out;
+
+}
+
+.alfredino2 {
+    display: block;
+    z-index: 0;
+    width: 25%;
+    position: absolute;
+    top: 55%;
+    left: 68%;
+    transform: rotate(5deg);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    transition: all 0.6s ease-in-out;
+}
+
+.alfredino2:hover {
+    display: block;
+    z-index: 1;
+    width: 30%;
+    position: absolute;
+    top: 47%;
+    left: 60%;
+    transform: rotate(-5deg);
+    transition: all 0.6s ease-in-out;
+}
+
+.sfondo {
+    display: none;
+    position: absolute;
+    width: 100vw;
+    height: 30px;
+    background-color: red;
+    top: -25px;
+}
+
+/* ------------------------ BACKGROUND/02 ------------------------ */
+
+.background2 {
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(Server/Archivio/Sfondi/heaven.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.gradient {
+    position: relative;
+    height: 150px;
+    background-color: line;
+    background-image: linear-gradient(#6699CC, rgba(255, 255, 255, 0));
+}
+
+/* ------------------------ QUESTIONS ------------------------ */
+
+div.box1 {
+    background-color: grey;
+    width: 100%;
+}
+
+div.box2 {
+    background-color: grey;
+    width: 100%;
+    margin: 14px 0 0 0;
+}
+
+div.box3 {
+    background-color: grey;
+    width: 100%;
+    margin: 14px 0 0 0;
+}
+
+div.box4 {
+    background-color: grey;
+    width: 100%;
+    margin: 14px 0 0 0;
+}
+
+div.box5 {
+    background-color: grey;
+    width: 100%;
+    margin: 14px 0 0 0;
+}
+
+div.d1 {
+    font-size: 20px;
+    display: inline-block;
+    padding: 3.5% 4% 3.5% 4%;
+    width: 66%;
+    /* background-color: rgb(227, 227, 227); */
+    background-color: var(--grigio-scuro2-modenotte);
+    color: var(--bianco-sporco-modnotte);
+}
+
+div.d2 {
+    font-size: 20px;
+    display: inline-block;
+    padding: 3.5% 4% 3.5% 4%;
+    width: 18%;
+    text-align: right;
+    /* background-color: rgb(227, 227, 227); */
+    background-color: var(--grigio-scuro2-modenotte);
+    color: var(--bianco-sporco-modnotte);
+}
+
+.text p {
+    font-size: 19px;
+    background-color: var(--grigio-scuro-modnotte);
+    padding: 4%;
+}
+
+div.text {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.6s;
+    background-color: var(--grigio-scuro-modnotte);
+    color: var(--grigio-chiaro-modnotte);
+}
+
+.box1:hover .d1~div.text,
+.box2:hover .d1~div.text,
+.box3:hover .d1~div.text,
+.box4:hover .d1~div.text,
+.box5:hover .d1~div.text {
+    max-height: 300px;
+    transition: all 0.6s;
+}
+
+.content {
+    width: 900px;
+    height: fit-content;
+    margin: 100px auto 100px auto;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--grigio-scuro-modnotte);
+    background-color: var(--grigio-scuro-modnotte);
+    flex-direction: column;
+    overflow: hidden;
+}
+
+div.stocazzo {
+    margin: auto 0 auto 0;
+    background-color: var(--grigio-scuro-modnotte);
+}
+
+
+
+/* ------------------------ MAIL ------------------------ */
+
+.avvisi-box {
+    width: 900px;
+    background-color: white;
+    margin: 100px auto 15px auto;
+}
+
+.domanda {
+    padding: 60px 40px 0 60px;
+    background-color: var(--grigio-scuro2-modenotte);
+    color: white;
+    font-size: 24px;
+}
+
+.risposta {
+    display: grid;
+    grid-template-columns: calc(70% - 10px) 30%;
+    column-gap: 10px;
+    padding: 30px 60px 60px 60px;
+    height: 70px;
+    line-height: 70px;
+    background-color: var(--grigio-scuro2-modenotte);
+}
+
+.mail {
+    background-color: var(--bianco-sporco-modnotte);
+    color: var(--grigio-scuro-modnotte);
+    font-size: 19px;
+    padding: 0 0 0 30px;
+}
+
+.copia {
+    background-color: var(--grigio-scuro-modnotte);
+    text-align: center;
+    color: white;
+    font-size: 19px;
+}
+
+
+/* ------------------------ PAYPAL ------------------------ */
+
+.avvisi-box2 {
+    width: 900px;
+    background-color: white;
+    margin: 0 auto 0 auto;
+}
+
+.domanda2 {
+    padding: 60px 60px 0 60px;
+    background-color: var(--grigio-scuro2-modenotte);
+    color: white;
+    font-size: 24px;
+}
+
+.risposta2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    padding: 30px 60px 60px 60px;
+    height: 100px;
+    line-height: 100px;
+    background-color: var(--grigio-scuro2-modenotte);
+}
+
+.mail2 {
+    background-color: var(--grigio-scuro-modnotte);
+    color: var(--bianco-sporco-modnotte);
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+    border: var(--grigio-scuro-modnotte);
+    font-family: 'pp_mondwestregular';
+    font-size: 25px;
+    padding: 0 40px 0 40px;
+    
+}
+
+.mail2:hover span {
+    display: none;
+}
+
+.mail2:hover::before {
+    content: 'IT15Y36772223000EM000695816';
+    color: var(--bianco-sporco-modnotte);
+    font-size: 22px;
+}
+
+.copia2 {
+    background-color: var(--grigio-scuro-modnotte);
+    text-align: center;
+    color: white;
+    font-size: 33px;
+    text-decoration: none;
+}
+
+.copia2 {
+    cursor: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" height="64" width="64"><text y="28" font-size="20">🍍</text><path d="M0,2 L0,0 L2,0" fill="none" /></svg>'), auto;
+}
+
+
+
+
+
+.copia3 {
+    background-color: var(--grigio-scuro-modnotte);
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------ PIE ------------------------ */
+
+.pie {
+    display: block;
+    margin: 200px auto 0 auto;
+    max-width: 1810px;
+    width: calc(100vw - 80px);
+    height: 350px;
+    /* background-color: rgb(58, 48, 128); */
+    background-color: var(--azzurro-chiaro);
+    opacity: 90%;
+}
+
+.pie div {
+    background-color: none;
+}
+
+.pie-box {
+    width: calc(100% - 100px);
+    margin: auto;
+    height: 100%;
+    background-color: none;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.pie .nome-sito,
+.pie .argomenti,
+.pie .social,
+.pie .pagine,
+.pie .collegamenti,
+.pie .cerca {
+    height: 89%;
+    display: inline-block;
+    color: white;
+    line-height: 25px;
+    background-color: none;
+    border: none;
+}
+
+.pie .argomenti,
+.pie .social,
+.pie .pagine,
+.pie .collegamenti {
+    white-space: nowrap;
+}
+
+.pie .argomenti,
+.pie .social,
+.pie .pagine {
+    margin-right: 45px;
+}
+
+.pie .nome-sito {
+    margin-right: 90px;
+}
+
+.pie .nome-sito div,
+.pie .argomenti div,
+.pie .social a,
+.pie .pagine a,
+.pie .collegamenti a,
+.pie .cerca div {
+    font-size: 18px;
+}
+
+.pie .social a,
+.pie .pagine a,
+.pie .collegamenti a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.pie .inmymindd {
+    font-size: 31px;
+    color: white;
+}
+
+.pie .sottotitolo {
+    position: relative;
+    font-size: 18px;
+}
+
+.pie .nome-sito {
+    line-height: 27px;
+    width: 35%;
+}
+
+.pie .titolo {
+    font-size: 23px;
+}
+
+.copyright {
+    width: 100%;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--bianco-sporco-modnotte);
+}
+
+.pie .cerca {
+    width: 30%;
+    margin-left: 50px;
+}
+
+.pie .barra-cerca {
+    width: calc(100% - (14px + 18px));
+    border: 0px hidden #ccc;
+    font-family: 'pp_mondwestregular';
+    outline: none;
+    background-color: white;
+    padding: 14px 14px 14px 18px;
+    color: var(--grigio-scuro);
+    font-size: 18px;
+}
+
+::placeholder {
+    color: var(--grigio-scuro);
+    opacity: 1; /* Firefox */
+  }
+  
+  ::-ms-input-placeholder { /* Edge 12 -18 */
+    color: var(--grigio-scuro);
+  }
+
+
+.pie .avvisi-box {
+    height: 60vh;
+    width: 100vw;
+}
+
+.pie .avvisi {
+    display: block;
+    height: 200px;
+    width: 50%;
+    background-color: rgb(227, 227, 227);
+    padding: 70px;
+    margin: 0 auto 0 auto;
+}
+
+.pie .risposta {
+    height: 60px;
+    display: grid;
+    grid-template-columns: 75% 24%;
+    gap: 1%;
+    padding: 50px 0 0 0;
+}
+
+.pie .domanda {
+    font-size: 30px;
+}
+
+.pie .mail {
+    font-size: 19px;
+    padding: 18px;
+    background-color: white;
+}
+
+.pie .copia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(156, 156, 156);
+    font-size: 20px;
+}
+
+
+
+

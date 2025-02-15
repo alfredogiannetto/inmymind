@@ -1,13 +1,18 @@
+
+
+
+
+
 /* ------------------------ NAVBAR ------------------------ */
 
 .navbar {
     position: absolute;
     text-align: center;
     list-style-type: none;
-    width: calc(100vw - 70*2px);
-    padding: 40px 70px 0 70px;
+    width: calc(100vw - 40*2px);
+    padding: 40px 40px 0 40px;
     height: fit-content;
-    background-color: none;
+    /* background-color: var(--azzurro-chiaro); */
     text-rendering: auto;
     -webkit-font-smoothing: auto;
     -moz-osx-font-smoothing: auto;
@@ -27,13 +32,38 @@
     opacity: 80%;
 }
 
-.home:hover {
+.home:hover span,
+.work:hover span,
+.about:hover span,
+.blog:hover span{
+    display: none;
+}
+
+.home:hover::before{
     content: 'h0m3';
 }
 
+.work:hover::before{
+    content: 'w0rK';
+}
+
+.about:hover::before{
+    content: '4b0ut';
+}
+
+.blog:hover:before{
+    content: 'bL0g';
+}
+
+
+
 .home:hover,
+.about:hover{
+    transform: rotate(8deg);
+}
+
+
 .work:hover,
-.about:hover,
 .blog:hover {
     transform: rotate(-8deg);
 }
@@ -44,6 +74,7 @@
     background-color: var(--azzurro-chiaro);
     /* background-image: linear-gradient(var(--blu-scuro), var(--rosa-chiaro)); */
     /* background-image: url(cielo.jpeg); */
+    background-image: url(Server/Archivio/Sfondi/clouds3.gif);
     background-position: contain;
     background-size: 100% 100%;
     height: 100vh;
@@ -140,11 +171,10 @@
 /* ------------------------ BACKGROUND/02 ------------------------ */
 
 .background2 {
-    background-color: red;
     text-align: center;
     height: 100vh;
     width: 100vw;
-    background-image: url(paradise.png);
+    background-image: url(Server/Archivio/Sfondi/heaven.png);
     background-size: cover;
     background-position: center;
 }
@@ -159,30 +189,30 @@
 /* ------------------------ QUESTIONS ------------------------ */
 
 div.box1 {
-    background-color: grey;
+    background-color: var(--grigio-scuro-modnotte);
     width: 100%;
 }
 
 div.box2 {
-    background-color: grey;
+    background-color: var(--grigio-scuro-modnotte);
     width: 100%;
     margin: 14px 0 0 0;
 }
 
 div.box3 {
-    background-color: grey;
+    background-color: var(--grigio-scuro-modnotte);
     width: 100%;
     margin: 14px 0 0 0;
 }
 
 div.box4 {
-    background-color: grey;
+    background-color: var(--grigio-scuro-modnotte);
     width: 100%;
     margin: 14px 0 0 0;
 }
 
 div.box5 {
-    background-color: grey;
+    background-color: var(--grigio-scuro-modnotte);
     width: 100%;
     margin: 14px 0 0 0;
 }
@@ -192,7 +222,9 @@ div.d1 {
     display: inline-block;
     padding: 3.5% 4% 3.5% 4%;
     width: 66%;
-    background-color: rgb(227, 227, 227);
+    /* background-color: rgb(227, 227, 227); */
+    background-color: var(--grigio-scuro2-modenotte);
+    color: var(--bianco-sporco-modnotte);
 }
 
 div.d2 {
@@ -201,19 +233,24 @@ div.d2 {
     padding: 3.5% 4% 3.5% 4%;
     width: 18%;
     text-align: right;
-    background-color: rgb(227, 227, 227);
+    /* background-color: rgb(227, 227, 227); */
+    background-color: var(--grigio-scuro2-modenotte);
+    color: var(--bianco-sporco-modnotte);
 }
 
 .text p {
     font-size: 19px;
-    background-color: white;
+    background-color: var(--grigio-scuro-modnotte);
     padding: 4%;
 }
 
 div.text {
+    width: 90%;
+    margin: auto;
     max-height: 0;
     overflow: hidden;
     transition: all 0.6s;
+    color: var(--grigio-chiaro-modnotte);
 }
 
 .box1:hover .d1~div.text,
@@ -225,136 +262,337 @@ div.text {
     transition: all 0.6s;
 }
 
-div.content {
+.content {
     width: 900px;
     height: fit-content;
     margin: 100px auto 100px auto;
     border-style: solid;
     border-width: 2px;
-    border-color: white;
-    background-color: white;
+    border-color: var(--grigio-scuro-modnotte);
+    background-color: var(--grigio-scuro-modnotte);
     flex-direction: column;
     overflow: hidden;
 }
 
 div.stocazzo {
     margin: auto 0 auto 0;
-    background-color: white;
+    background-color: var(--grigio-scuro-modnotte);
 }
+
+
+
+/* ------------------------ MAIL ------------------------ */
+
+.avvisi-box {
+    width: 900px;
+    background-color: white;
+    margin: 100px auto 15px auto;
+}
+
+.domanda {
+    padding: 60px 40px 0 60px;
+    background-color: var(--grigio-scuro2-modenotte);
+    color: white;
+    font-size: 24px;
+}
+
+.risposta {
+    display: grid;
+    grid-template-columns: calc(70% - 10px) 30%;
+    column-gap: 10px;
+    padding: 30px 60px 60px 60px;
+    height: 70px;
+    line-height: 70px;
+    background-color: var(--grigio-scuro2-modenotte);
+}
+
+.mail {
+    background-color: var(--bianco-sporco-modnotte);
+    color: var(--grigio-scuro-modnotte);
+    font-size: 19px;
+    padding: 0 0 0 30px;
+}
+
+.copia {
+    background-color: var(--grigio-scuro-modnotte);
+    text-align: center;
+    color: white;
+    font-size: 19px;
+}
+
+
+/* ------------------------ PAYPAL ------------------------ */
+
+.avvisi-box2 {
+    width: 900px;
+    background-color: white;
+    margin: 0 auto 0 auto;
+}
+
+.domanda2 {
+    padding: 60px 60px 0 60px;
+    background-color: var(--grigio-scuro2-modenotte);
+    color: white;
+    font-size: 24px;
+}
+
+.risposta2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    padding: 30px 60px 60px 60px;
+    height: 100px;
+    line-height: 100px;
+    background-color: var(--grigio-scuro2-modenotte);
+}
+
+.mail2 {
+    background-color: var(--grigio-scuro-modnotte);
+    color: var(--bianco-sporco-modnotte);
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+    border: var(--grigio-scuro-modnotte);
+    font-family: 'pp_mondwestregular';
+    font-size: 25px;
+    padding: 0 40px 0 40px;
+    
+}
+
+.mail2:hover span {
+    display: none;
+}
+
+.mail2:hover::before {
+    content: 'IT15Y36772223000EM000695816';
+    color: var(--bianco-sporco-modnotte);
+    font-size: 19px;
+}
+
+.copia2 {
+    background-color: var(--grigio-scuro-modnotte);
+    text-align: center;
+    color: white;
+    font-size: 33px;
+    text-decoration: none;
+}
+
+.copia2 {
+    cursor: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" height="64" width="64"><text y="28" font-size="15">❤️</text><path d="M0,2 L0,0 L2,0" fill="none" /></svg>'), auto;
+}
+
+
+
+
+
+.copia3 {
+    background-color: var(--grigio-scuro-modnotte);
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* ------------------------ PIE ------------------------ */
 
 .pie {
     display: block;
-    margin: 400px auto 0 auto;
-    max-width: 1810px;
+    margin: 200px auto 0 auto;
+    max-width: 1800px;
+    width: calc(100vw - 80px);
     height: 350px;
-    /* background-color: rgb(58, 48, 128); */
-    background-color: rgb(88, 119, 88);
+    background-color: var(--bs);
+    opacity: 90%;
 }
 
-.pie div {
-    background-color: none;
+.pie_left {
+    height: 350px;
+    float: right;
+}
+
+@media (max-width: 1440px) {
+    .pie .cerca {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .pie_left {
+        display: none;
+    }
+
+    .pie .argomenti,
+    .pie .social,
+    .pie .pagine,
+    .pie .privacy {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .pie .argomenti {
+        text-align: left;
+        width: 175px;
+        height: calc(100% - 30px);
+        display: inline;
+        color: white;
+        padding: 40px 0 0 0px;
+        white-space: nowrap;
+        float: left;
+    }
+
+    .pie .social {
+        text-align: left;
+        width: 125px;
+        height: calc(100% - 30px);
+        display: inline;
+        color: white;
+        padding: 40px 0 0 0px;
+        white-space: nowrap;
+        float: left;
+    }
+    
+    .pie .pagine {
+        text-align: left;
+        width: 100px;
+        height: calc(100% - 30px);
+        display: inline;
+        color: white;
+        padding: 40px 0 0 0px;
+        white-space: nowrap;
+        float: left;
+    }
+    
+    .pie .privacy {
+    text-align: left;
+    width: 120px;
+    height: calc(100% - 30px);
+    display: inline;
+    color: white;
+    padding: 40px 0 0 0px;
+    white-space: nowrap;
+    float: left;
+}
+}
+
+@media (min-width: 1440px) {
+    .pie .cerca {
+        white-space: nowrap;
+        display: inline;
+        height: calc(100% - 30px);
+        color: white;
+        padding: 40px 0 0 50px;
+        width: 250px;
+        float: right;
+    }
 }
 
 .pie-box {
-    width: 90%;
-    margin: 0 5% 0 5%;
+    width: calc(100% - 100px);
+    margin: auto;
     height: 100%;
-    background-color: none;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
 }
 
-.pie .nome-sito,
-.pie .argomenti,
-.pie .social,
-.pie .pagine,
-.pie .collegamenti,
-.pie .cerca {
-    height: 89%;
-    display: inline-block;
-    color: white;
-    line-height: 25px;
-    background-color: none;
-    border: none;
-}
-
-.pie .argomenti,
-.pie .social,
-.pie .pagine,
-.pie .collegamenti {
-    white-space: nowrap;
-}
-
-.pie .argomenti,
-.pie .social,
-.pie .pagine {
-    margin-right: 50px;
-}
-
-.pie .nome-sito {
-    margin-right: 100px;
-}
-
-.pie .nome-sito div,
-.pie .argomenti div,
-.pie .social a,
-.pie .pagine a,
-.pie .collegamenti a,
-.pie .cerca div {
-    font-size: 18px;
-}
-
-.pie .social a,
-.pie .pagine a,
-.pie .collegamenti a {
+.pie .pagine .link {
     display: block;
+    color: white;
     text-decoration: none;
+}
+
+.pie .social .link {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.pie .privacy .link {
+    display: block;
     color: white;
 }
 
-.pie .inmymindd {
-    font-size: 31px;
-    color: white;
+.cerca .barra-cerca {
+    width: 100%;
 }
 
-.pie .sottotitolo {
-    position: relative;
-    font-size: 18px;
-}
-
-.pie .nome-sito {
-    line-height: 27px;
-    width: 45%;
-}
-
-.pie .titolo {
+.pie .pagine .titolo{
     font-size: 23px;
 }
 
-.copyright {
-    width: 100%;
-    height: 85px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--bianco-sporco-modnotte);
+.pie .pagine .link{
+    font-size: 18px;
+    line-height: 25px;
 }
 
-.pie .cerca {
-    width: 30%;
-    margin-left: 100px;
+.nome-sito .titolo {
+    font-size: 31px;
+}
+
+.cerca .titolo {
+    font-size: 23px;
+}
+
+.nome-sito .sottotitolo {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.argomenti div {
+    font-size: 18px;
+    line-height: 25px;
+    text-decoration: underline 1.3px;
+}
+
+.social a {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.privacy a {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.argomenti .titolo {
+    font-size: 23px;
+}
+
+.social .titolo {
+    font-size: 23px;
+}
+
+.privacy .titolo {
+    font-size: 23px;
+}
+
+.pie .nome-sito {
+    display: block;
+    height: calc(100% - 30px);
+    padding: 30px 0 0 0;
+    width: 350px;
+    margin: 0 90px 0 0;
+    color: white;
+    float: left;
 }
 
 .pie .barra-cerca {
-    width: calc(100% - (14px + 18px));
-    border: 0px hidden #ccc;
-    font-family: 'pp_mondwestregular';
+    width: calc(100% - 14px - 18px);
+    border: none;
     outline: none;
+    font-family: 'pp_mondwestregular';
     background-color: white;
-    padding: 14px 14px 14px 18px;
+    padding: 13px 14px 13px 18px;
     color: var(--grigio-scuro);
     font-size: 18px;
 }
@@ -362,53 +600,18 @@ div.stocazzo {
 ::placeholder {
     color: var(--grigio-scuro);
     opacity: 1; /* Firefox */
-  }
+}
   
   ::-ms-input-placeholder { /* Edge 12 -18 */
     color: var(--grigio-scuro);
-  }
-
-
-.pie .avvisi-box {
-    height: 60vh;
-    width: 100vw;
 }
 
-.pie .avvisi {
-    display: block;
-    height: 200px;
-    width: 50%;
-    background-color: rgb(227, 227, 227);
-    padding: 70px;
-    margin: 0 auto 0 auto;
-}
-
-.pie .risposta {
-    height: 60px;
-    display: grid;
-    grid-template-columns: 75% 24%;
-    gap: 1%;
-    padding: 50px 0 0 0;
-}
-
-.pie .domanda {
-    font-size: 30px;
-}
-
-.pie .mail {
-    font-size: 19px;
-    padding: 18px;
-    background-color: white;
-}
-
-.pie .copia {
+  .copyright {
+    width: 100%;
+    height: 85px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    background-color: rgb(156, 156, 156);
-    font-size: 20px;
+    justify-content: center;
+    color: var(--bianco-sporco-modnotte);
 }
-
-
-
 

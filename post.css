@@ -3,14 +3,14 @@
 .navbar {
     display: grid;
     grid-template-columns: 50% 50%;
-    width: 1810px;
+    width: calc(100vw - 80px);
     margin: 0 auto 0 auto;
     background-color: none;
     height: 80px;
     background-color: none;
 }
 
-.navbar2 {
+.navbar .destra {
     width: 100%;
     display: flex;
     align-items: center;
@@ -119,8 +119,8 @@
     position: relative;
     /* background-image: url(paradise.png); */
     background-image: url(Server/Archivio/Sfondi/gradient.gif);
-    height: 500px;
-    width: 1810px;
+    height: 450px;
+    width: calc(100vw - 80px);
     margin: 0 auto;
     background-size: cover;
     background-position: bottom;
@@ -134,7 +134,7 @@
 .blog-effettivo{
     position: relative;
     top: -255px;
-    width: 1050px;
+    width: 850px;
     background-color: none;
     margin: 50px auto 0 auto;
     background-color: var(--grigio-scuro-modnotte);
