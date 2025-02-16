@@ -1,1 +1,0 @@
-.slide-enter-active{animation:slide-in .2s}.slide-leave-active{animation:slide-in .3s reverse}@keyframes slide-in{0%{transform:translateY(-5px);opacity:0}to{transform:translateY(0);opacity:100%}}
