@@ -9,9 +9,6 @@
     display: flex;
     flex-direction: row;
     gap: 25px;
-    text-rendering: auto;
-    -webkit-font-smoothing: auto;
-    -moz-osx-font-smoothing: auto;
     font-size: 21px;
     text-decoration: none;
     justify-content: center;
