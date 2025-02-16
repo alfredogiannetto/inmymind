@@ -87,6 +87,10 @@
     padding: 35px 60px 35px 60px;
 }
 
+.question p a {
+    color: var(--bianco);
+}
+
 /* ------------------------ MAIL ------------------------ */
 
 .avvisi-box {
@@ -469,7 +473,7 @@
     transform: rotate(-8deg);
 }
 
-.question .top:hover + .text {
+.question:hover .top~div.text {
     transition: all 0.6s;
     max-height: 400px;
 }
