@@ -1,285 +1,91 @@
-
-
-
-
-
 /* ------------------------ NAVBAR ------------------------ */
 
 .navbar {
     position: absolute;
-    text-align: center;
     list-style-type: none;
-    width: calc(100vw - 40*2px);
-    padding: 40px 40px 0 40px;
+    width: 100vw;
     height: fit-content;
-    /* background-color: var(--azzurro-chiaro); */
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
     text-rendering: auto;
     -webkit-font-smoothing: auto;
     -moz-osx-font-smoothing: auto;
+    font-size: 21px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
 }
 
 .home,
 .work,
 .about,
 .blog {
-    font-size: 21px;
-    display: inline-block;
-    width: auto;
-    margin: 0;
-    padding: 20px 15px 20px 15px;
     text-decoration: none;
     color: black;
     opacity: 80%;
 }
 
-.home:hover span,
-.work:hover span,
-.about:hover span,
-.blog:hover span{
-    display: none;
-}
+/* ------------------------ BACKGROUND ------------------------ */
 
-.home:hover::before{
-    content: 'h0m3';
-}
-
-.work:hover::before{
-    content: 'w0rK';
-}
-
-.about:hover::before{
-    content: '4b0ut';
-}
-
-.blog:hover:before{
-    content: 'bL0g';
-}
-
-
-
-.home:hover,
-.about:hover{
-    transform: rotate(8deg);
-}
-
-
-.work:hover,
-.blog:hover {
-    transform: rotate(-8deg);
-}
-
-/* ------------------------ BACKGROUND/01 ------------------------ */
-
-.background1 {
-    background-color: var(--azzurro-chiaro);
-    /* background-image: linear-gradient(var(--blu-scuro), var(--rosa-chiaro)); */
-    /* background-image: url(cielo.jpeg); */
-    background-image: url(Server/Archivio/Sfondi/clouds3.gif);
-    background-position: contain;
-    background-size: 100% 100%;
+.background {
+    background-image: url('../assets/img/home/clouds.gif');
+    background-position: center;
+    background-size: cover;
     height: 100vh;
     width: 100vw;
     display: flex;
-    justify-content: center;
     align-items: center;
-    overflow: visible;
+    justify-content: center;
+    font-size: 230px;
 }
 
-.background1 p {
-    z-index: 0;
-    text-align: center;
-    font-size: 270px;
-    color: black;
+.background p {
+    position: absolute;
     opacity: 80%;
-}
-
-.background1 .img1 {
-    display: none;
-    position: absolute;
-    top: 13%;
-    left: 25%;
-    margin: 0;
-    padding: 0;
-    z-index: 1;
-}
-
-.play-icon {
-    left: 70px;
-    bottom: 70px;
-    position: absolute;
-    height: 40px;
-    width: 40px;
-}
-
-.alfredino {
-    display: block;
-    z-index: 0;
-    width: 25%;
-    position: absolute;
-    top: 18%;
-    left: 9%;
-    transform: rotate(-5deg);
-    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
-    transition: all 0.6s ease-in-out;
-
-}
-
-.alfredino:hover {
-    display: block;
-    z-index: 1;
-    width: 30%;
-    position: absolute;
-    top: 20%;
-    left: 10%;
-    transform: rotate(3deg);
-    transition: all 0.6s ease-in-out;
-
-}
-
-.alfredino2 {
-    display: block;
-    z-index: 0;
-    width: 25%;
-    position: absolute;
-    top: 55%;
-    left: 68%;
-    transform: rotate(5deg);
-    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-    transition: all 0.6s ease-in-out;
-}
-
-.alfredino2:hover {
-    display: block;
-    z-index: 1;
-    width: 30%;
-    position: absolute;
-    top: 47%;
-    left: 60%;
-    transform: rotate(-5deg);
-    transition: all 0.6s ease-in-out;
-}
-
-.sfondo {
-    display: none;
-    position: absolute;
-    width: 100vw;
-    height: 30px;
-    background-color: red;
-    top: -25px;
-}
-
-/* ------------------------ BACKGROUND/02 ------------------------ */
-
-.background2 {
-    text-align: center;
-    height: 100vh;
-    width: 100vw;
-    background-image: url(Server/Archivio/Sfondi/heaven.png);
-    background-size: cover;
-    background-position: center;
-}
-
-.gradient {
-    position: relative;
-    height: 150px;
-    background-color: line;
-    background-image: linear-gradient(#6699CC, rgba(255, 255, 255, 0));
 }
 
 /* ------------------------ QUESTIONS ------------------------ */
 
-div.box1 {
-    background-color: var(--grigio-scuro-modnotte);
-    width: 100%;
-}
-
-div.box2 {
-    background-color: var(--grigio-scuro-modnotte);
-    width: 100%;
-    margin: 14px 0 0 0;
-}
-
-div.box3 {
-    background-color: var(--grigio-scuro-modnotte);
-    width: 100%;
-    margin: 14px 0 0 0;
-}
-
-div.box4 {
-    background-color: var(--grigio-scuro-modnotte);
-    width: 100%;
-    margin: 14px 0 0 0;
-}
-
-div.box5 {
-    background-color: var(--grigio-scuro-modnotte);
-    width: 100%;
-    margin: 14px 0 0 0;
-}
-
-div.d1 {
-    font-size: 20px;
-    display: inline-block;
-    padding: 3.5% 4% 3.5% 4%;
-    width: 66%;
-    /* background-color: rgb(227, 227, 227); */
-    background-color: var(--grigio-scuro2-modenotte);
-    color: var(--bianco-sporco-modnotte);
-}
-
-div.d2 {
-    font-size: 20px;
-    display: inline-block;
-    padding: 3.5% 4% 3.5% 4%;
-    width: 18%;
-    text-align: right;
-    /* background-color: rgb(227, 227, 227); */
-    background-color: var(--grigio-scuro2-modenotte);
-    color: var(--bianco-sporco-modnotte);
-}
-
-.text p {
-    font-size: 19px;
-    background-color: var(--grigio-scuro-modnotte);
-    padding: 4%;
-}
-
-div.text {
-    width: 90%;
+.questions {
+    padding: 200px 0 0 0;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    width: fit-content;
+}
+
+.question {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    line-height: 25px;
+}
+
+.question .top {
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 35px;
+    background-color: var(--grigiochiaro);
+    color: var(--bianco);
+}
+
+.question .text {
     max-height: 0;
     overflow: hidden;
     transition: all 0.6s;
-    color: var(--grigio-chiaro-modnotte);
 }
 
-.box1:hover .d1~div.text,
-.box2:hover .d1~div.text,
-.box3:hover .d1~div.text,
-.box4:hover .d1~div.text,
-.box5:hover .d1~div.text {
-    max-height: 300px;
-    transition: all 0.6s;
+.question p {
+    font-size: 19px;
+    color: var(--bianco);
+    opacity: 60%;
+    padding: 35px 60px 35px 60px;
 }
-
-.content {
-    width: 900px;
-    height: fit-content;
-    margin: 100px auto 100px auto;
-    border-style: solid;
-    border-width: 2px;
-    border-color: var(--grigio-scuro-modnotte);
-    background-color: var(--grigio-scuro-modnotte);
-    flex-direction: column;
-    overflow: hidden;
-}
-
-div.stocazzo {
-    margin: auto 0 auto 0;
-    background-color: var(--grigio-scuro-modnotte);
-}
-
-
 
 /* ------------------------ MAIL ------------------------ */
 
@@ -615,3 +421,55 @@ div.stocazzo {
     color: var(--bianco-sporco-modnotte);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------ HOVER ------------------------ */
+
+.home:hover span,
+.work:hover span,
+.about:hover span,
+.blog:hover span{
+    display: none;
+}
+
+.home:hover::before{
+    content: 'h0m3';
+}
+
+.work:hover::before{
+    content: 'w0rK';
+}
+
+.about:hover::before{
+    content: '4b0ut';
+}
+
+.blog:hover:before{
+    content: 'bL0g';
+}
+
+.home:hover,
+.about:hover{
+    transform: rotate(8deg);
+}
+
+.work:hover,
+.blog:hover {
+    transform: rotate(-8deg);
+}
+
+.question .top:hover + .text {
+    transition: all 0.6s;
+    max-height: 400px;
+}

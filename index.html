@@ -4,11 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="Server/Archivio/Foto/favicon.svg">
-    <link rel="stylesheet" href="settings.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/svg/icon.svg">
+    <link rel="stylesheet" href="css/style.css">
     <title>inmymind</title>
-    <!-- Google tag (gtag.js) -->
+    <!-- Google Tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-WF2XREKVBR"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -20,90 +19,106 @@
 
         gtag('config', 'G-WF2XREKVBR');
     </script>
+    <style>
+        @font-face {
+            font-family: 'ppmondwest-regular';
+            src: url('assets/font/ppmondwest-regular.woff') format('woff'),
+                url('assets/font/ppmondwest-regular.woff2') format('woff2');
+            font-style: normal;
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: 'ppmondwest-regular';
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            background-color: var(--grigioscuro);
+        }
+
+        :root {
+            --grigioscuro: #181A1B;
+            --grigiochiaro: #282B2D;
+            --bianco: #E8E6E3;
+            --azzurro: #4B8BB7;
+        }
+    </style>
 </head>
 
 <body>
     <div class="navbar">
-        <a class="home" href="home.html"><span>home</span></a>
-        <a class="work" href="news.asp"><span>work</span></a>
-        <a class="about" href="contact.asp"><span>about</span></a>
+        <a class="home" href="index.html"><span>home</span></a>
+        <a class="work" href="work.html"><span>work</span></a>
+        <a class="about" href="about.html"><span>about</span></a>
         <a class="blog" href="blog.html"><span>blog</span></a>
     </div>
 
-    <div class="background1">
-        <div class="sfondo"></div>
-        <img class="img1" src="cloud.png" alt="">
-        <!-- 
-        <img class="alfredino" src="Server/Archivio/Foto/alfredino.JPG" alt="">
-        <img class="alfredino2" src="Server/Archivio/Foto/alfredino2.JPG" alt=""> -->
+    <div class="background">
         <p>inmymind</p>
-        <!-- <div class="play-icon"><img src="Server/Archivio/Vector/play.svg" alt="icon"></div> -->
     </div>
 
-
-    <div class="content">
-        <div class="stocazzo">
-
-            <div class="box1">
-                <div class="d1">Chi sono?</div>
-                <div class="d2">+</div>
-                <div class="text">
-                    <p class="testo">Mi chiamo Alfredo, sono nato a Palermo nel 2004 ma vivo a Roma dal 2011. Sono un
-                        Graphic Designer e un Web Developer. Amo scrivere, leggere, viaggiare, suonare la chitarra e
-                        stare a contatto con la natura. Mi piace fare nuove esperienze e ascoltare le storie delle
-                        persone.
-                    </p>
-                </div>
+    <div class="questions">
+        <div class="question">
+            <div class="top">
+                <div>Chi sono?</div>
+                <div>+</div>
             </div>
-
-
-            <div class="box3">
-                <div class="d1">Cosa è inmymind?</div>
-                <div class="d2">+</div>
-                <div class="text">
-                    <p>
-                        È un blog nato per soddisfare l'esigenza di tenere traccia dei miei pensieri, delle cose che
-                        imparo e delle esperienze che vivo. Di conseguenza questo blog non è dedicato ad un argomento in
-                        particolare, quello che scrivo rispecchia il mio percorso personale e quello che sto vivendo. Se
-                        siete curiosi di sapere di cosa parlo potete andare a piè pagina e dare un'occhiata alla sezione
-                        Topic.
-                    </p>
-                </div>
+            <div class="text">
+                <p>
+                    Mi chiamo Alfredo, sono nato a Palermo nel 2004 ma vivo a Roma dal 2011. Sono un
+                    Graphic Designer e un Web Developer. Amo scrivere, leggere, viaggiare, suonare la chitarra e
+                    stare a contatto con la natura. Mi piace fare nuove esperienze e ascoltare le storie delle
+                    persone.
+                </p>
             </div>
-
-            <div class="box2">
-                <div class="d1">Pensare fa paura?</div>
-                <div class="d2">+</div>
-                <div class="text">
-                    <p>Uno studio condotto dall'Università della Virginia rivela che molte persone trovano estremamente
-                        sgradevole trascorrere del tempo da sole con i propri pensieri, al punto da preferire il dolore
-                        fisico.
-                        Il professor Timothy Wilson ha ideato un esperimento in cui i partecipanti dovevano restare in
-                        una stanza vuota per 15 minuti, senza alcuno stimolo esterno, dedicandosi unicamente alla
-                        riflessione.
-                        La maggior parte dei soggetti ha trovato questa esperienza quasi insopportabile. In una variante
-                        dello studio, il 67% degli uomini e il 25% delle donne si sono persino auto-inflitti una scossa
-                        elettrica pur di sfuggire al silenzio mentale.
-                    </p>
-                </div>
+        </div>
+        <div class="question">
+            <div class="top">
+                <div>Cosa è inmymind?</div>
+                <div>+</div>
             </div>
-
-
-
-
-
-            <div class="box4">
-                <div class="d1">Come ho realizzato il sito?</div>
-                <div class="d2">+</div>
-                <div class="text">
-                    <p>Questo sito nasce anche come scommessa personale. Mi sono dedicato alla sua realizzazione dal
-                        design allo sviluppo. Ho usato HTML, CSS e JavaScript, come CMS non mi sono appoggiato a terzi,
-                        ma ne ho sviluppato uno che corrispondesse alle mie esigenze.</p>
-                </div>
+            <div class="text">
+                <p>
+                    È un blog nato per soddisfare l'esigenza di tenere traccia dei miei pensieri, delle cose che
+                    imparo e delle esperienze che vivo. Di conseguenza questo blog non è dedicato ad un argomento in
+                    particolare, quello che scrivo rispecchia il mio percorso personale e quello che sto vivendo. Se
+                    siete curiosi di sapere di cosa parlo potete andare a piè pagina e dare un'occhiata alla sezione
+                    Topic.
+                </p>
             </div>
-
-
-
+        </div>
+        <div class="question">
+            <div class="top">
+                <div>Pensare fa paura?</div>
+                <div>+</div>
+            </div>
+            <div class="text">
+                <p>
+                    Uno studio condotto dall'Università della Virginia rivela che molte persone trovano estremamente
+                    sgradevole trascorrere del tempo da sole con i propri pensieri, al punto da preferire il dolore
+                    fisico. Il professor Timothy Wilson ha ideato un esperimento in cui i partecipanti dovevano restare
+                    in
+                    una stanza vuota per 15 minuti, senza alcuno stimolo esterno, dedicandosi unicamente alla
+                    riflessione. La maggior parte dei soggetti ha trovato questa esperienza quasi insopportabile. In una
+                    variante dello studio, il 67% degli uomini e il 25% delle donne si sono persino auto-inflitti una
+                    scossa
+                    elettrica pur di sfuggire al silenzio mentale.
+                </p>
+            </div>
+        </div>
+        <div class="question">
+            <div class="top">
+                <div>Come ho realizzato il sito?</div>
+                <div>+</div>
+            </div>
+            <div class="text">
+                <p>
+                    Questo sito nasce anche come scommessa personale. Mi sono dedicato alla sua realizzazione dal
+                    design allo sviluppo. Ho usato HTML, CSS e JavaScript, come CMS non mi sono appoggiato a terzi,
+                    ma ne ho sviluppato uno che corrispondesse alle mie esigenze.
+                </p>
+            </div>
         </div>
     </div>
 
@@ -115,6 +130,7 @@
             <div class="copia">Copia</div>
         </div>
     </div>
+
 
     <div class="avvisi-box2">
         <div class="domanda2">Vuoi supportare il mio lavoro? <br>Fai una donazione tramite IBAN / PayPal oppure offrime
@@ -132,11 +148,11 @@
         <div class="pie-box">
             <div class="nome-sito">
                 <p class="titolo">inmymind.</p><br>
-                <p class="sottotitolo">Ma ora così parla il Signore, il tuo Creatore. Non temere, perché io ti ho
-                    riscattato, ti ho chiamato per nome, tu sei mio! <br>Isaia 43:1 </p>
+                <p class="sottotitolo">
+                    Ma ora così parla il Signore, il tuo Creatore. Non temere, perché io ti ho
+                    riscattato, ti ho chiamato per nome, tu sei mio! <br>Isaia 43:1</p>
             </div>
             <div>
-
                 <div class="pie_left">
                     <div class="argomenti">
                         <p class="titolo">Topic</p><br>
@@ -147,7 +163,6 @@
                         <div>Nerd-amo</div>
                         <div>Salute Mentale</div>
                     </div>
-
                     <div class="social">
                         <p class="titolo">Social</p><br>
                         <a class="link" href="https://www.linkedin.com/in/alfredogiannetto">Linkedin</a>
@@ -157,7 +172,6 @@
                         <a class="link" href="https://www.vinted.it/member/87107740">Vinted</a>
                         <a class="link" href="https://letterboxd.com/itsfreddie/">Letterboxd</a>
                     </div>
-
                     <div class="pagine">
                         <p class="titolo">Menu</p><br>
                         <a class="link" href="https://www.linkedin.com/in/alfredogiannetto">Home</a>
@@ -166,8 +180,6 @@
                         <a class="link" href="https://www.artstation.com/alfredogiannetto">Blog</a>
                         <a class="link" href="https://www.artstation.com/alfredogiannetto">Contact</a>
                     </div>
-
-
                     <div class="privacy">
                         <p class="titolo">Privacy</p><br>
                         <a class="link">Home</a>
@@ -176,18 +188,13 @@
                         <a class="link">Privacy Policy</a>
                         <a class="link">Aggiorna Cookies</a>
                     </div>
-
                     <div class="cerca">
                         <p class="titolo">Newsletter</p><br>
                         <input type="text" placeholder="Inserisci mail" class="barra-cerca"></input>
                     </div>
                 </div>
-
             </div>
-
             <div class="copyright">Copyright © 2025. All Rights Reserved.</div>
-
-
 </body>
 
 </html>
