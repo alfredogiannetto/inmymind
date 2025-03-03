@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  scrollbar-width: none;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+@font-face {
+  font-family: "Gambetta";
+  src: url("../fonts/gambetta-variable.woff") format("woff"),
+    url("../fonts/gambetta-variable.woff2") format("woff2"),
+    url("../fonts/gambetta-variable-italic.woff") format("woff"),
+    url("../fonts/gambetta-variable-italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Gambetta-Italic";
+  src: url("../fonts/gambetta/Gambetta-LightItalic.woff") format("woff"),
+    url("../fonts/gambetta/Gambetta-LightItalic.woff2") format("woff2");
+  font-style: normal;
+}
+@font-face {
+  font-family: "Piazzolla";
+  src: url("../fonts/Piazzolla-Regular.woff2") format("woff"),
+  url("../fonts/Piazzolla-Bold.woff2") format("woff"),
+  url("../fonts/Piazzolla-BoldItalic.woff2") format("woff"),
+  url("../fonts/Piazzolla-ExtraLight.woff2") format("woff"),
+  url("../fonts/Piazzolla-Italic.woff2") format("woff"),
+  url("../fonts/Piazzolla-Light.woff2") format("woff"),
+  url("../fonts/Piazzolla-LightItalic.woff2") format("woff"),
+  url("../fonts/Piazzolla-Medium.woff2") format("woff"),
+  url("../fonts/Piazzolla-MediumItalic.woff2") format("woff"),
+  url("../fonts/Piazzolla-SemiBold.woff2") format("woff"),
+  url("../fonts/Piazzolla-SemiBoldItalic.woff2") format("woff"),
+  url("../fonts/Piazzolla-Thin.woff2") format("woff"),
+  url("../fonts/Piazzolla-ThinItalic.woff2") format("woff"),
+}
+body {
+  font-family: "Gambetta";
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--green);
+  color: white;
+}
+:root{
+  --green: #59591D;
+}

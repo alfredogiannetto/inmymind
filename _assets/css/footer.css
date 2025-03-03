@@ -1,0 +1,149 @@
+.pie {
+  margin: 250px auto 0 auto;
+  max-width: 1800px;
+  width: calc(100vw - (80px + 50px * 2));
+  height: 350px;
+  background-color: var(--azzurro);
+  opacity: 90%;
+  padding: 0 50px 0 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.pie_right {
+  height: 350px;
+  float: right;
+  display: flex;
+  flex-direction: row;
+}
+.pie .nome-sito {
+  margin-top: 45px;
+  width: 350px;
+  color: white;
+}
+.pie .argomenti {
+  margin-top: 45px;
+  width: 175px;
+  display: inline;
+  color: white;
+  white-space: nowrap;
+  float: left;
+}
+.pie .social {
+  margin-top: 45px;
+  width: 125px;
+  display: inline;
+  color: white;
+  white-space: nowrap;
+  float: left;
+}
+.pie .pagine {
+  margin-top: 45px;
+  width: 100px;
+  display: inline;
+  color: white;
+  white-space: nowrap;
+  float: left;
+}
+.pie .privacy {
+  margin-top: 45px;
+  width: 190px;
+  display: inline;
+  color: white;
+  white-space: nowrap;
+  float: left;
+}
+.pie .cerca {
+  margin-top: 45px;
+  white-space: nowrap;
+  display: inline;
+  color: white;
+  float: right;
+  width: 240px;
+}
+.pie .barra-cerca {
+  width: calc(100% - (14px + 18px));
+  border: none;
+  outline: none;
+  font-family: "pp_mondwestregular";
+  background-color: white;
+  padding: 13px 14px 13px 18px;
+  color: var(--grigio-scuro);
+  font-size: 17px;
+}
+.pie-box {
+  width: calc(100% - 100px);
+  margin: auto;
+  height: 100%;
+}
+.pie .pagine .link {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+.pie .social .link {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+.pie .privacy .link {
+  display: block;
+  color: white;
+}
+.pie .pagine .titolo {
+  font-size: 22px;
+}
+.pie .pagine .link {
+  font-size: 17px;
+  line-height: 25px;
+}
+.nome-sito .titolo {
+  font-family: "Gambarino", serif;
+  letter-spacing: -2px;
+  font-size: 30px;
+  font-weight: 450;
+}
+.cerca .titolo {
+  font-size: 22px;
+}
+.nome-sito .sottotitolo {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  font-size: 17px;
+  line-height: 25px;
+}
+.argomenti div {
+  font-size: 17px;
+  line-height: 25px;
+  text-decoration: underline 1.3px;
+}
+.social a {
+  font-size: 17px;
+  line-height: 25px;
+}
+.privacy a {
+  font-size: 17px;
+  line-height: 25px;
+}
+.argomenti .titolo {
+  font-size: 22px;
+}
+.social .titolo {
+  font-size: 22px;
+}
+.privacy .titolo {
+  font-size: 22px;
+}
+::placeholder {
+  font-family: "Gambetta", serif;
+  opacity: 30%;
+}
+.copyright {
+  width: 100%;
+  height: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--bianco);
+}

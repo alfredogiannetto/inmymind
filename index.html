@@ -1,179 +1,44 @@
 <!DOCTYPE html>
-<html lang="it">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="assets/svg/icon.svg">
-    <link rel="stylesheet" href="css/settings.css">
-    <link rel="stylesheet" href="css/style.css">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="_assets/svg/icon.svg" />
+    <link rel="stylesheet" href="_assets/css/settings.css" />
+    <link rel="stylesheet" href="_assets/css/style.css" />
+    <script src="_assets/js/footer.js"></script>
     <title>inmymind</title>
-    <!-- Google Tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WF2XREKVBR"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'G-WF2XREKVBR');
-    </script>
-</head>
-
-<body>
-    <div class="navbar">
-        <a class="home" href="index.html"><span>home</span></a>
-        <a class="work" href="work.html"><span>work</span></a>
-        <a class="about" href="about.html"><span>about</span></a>
-        <a class="blog" href="blog.html"><span>blog</span></a>
+  </head>
+  <body>
+    <div class="website-title">inmymind</div>
+    <div class="header">
+      <a href="">About</a>
+      <a href="">Photo</a>
+      <a href="">Blog</a>
     </div>
 
-    <div class="background">
-        <p>inmymind</p>
+    <div class="content">
+      <div class="search">
+        <select id="yearFilter">
+          <option value="anno">Anno</option>
+          <option value="2024">2024</option>
+          <option value="2025">2025</option>
+        </select>
+        <div>
+          <select id="topicFilter">
+            <option value="">Argomento</option>
+            <option value="Viaggi">Viaggi</option>
+            <option value="Crescita Personale">Crescita Personale</option>
+            <option value="Recensioni">Recensioni</option>
+            <option value="Salute Mentale">Salute Mentale</option>
+            <option value="Fede">Fede</option>
+          </select>
+        </div>
+      </div>
+      <div id="posts-container"></div>
     </div>
 
-    <div class="questions">
-        <div class="question">
-            <div class="top">
-                <div>Chi sono?</div>
-                <div>+</div>
-            </div>
-            <div class="text">
-                <p>
-                    Alfredo Giannetto <br><br>
-
-                    Sono un Graphic Designer romano del 2004. Ho studiato grafica e comunicazione
-                    presso il CFP del Pio Uncidesimo a Roma. Attualmente sto studiando 3D Digital Production
-                    presso la Rainbow Academy. Nel 2021 ho partecipato al concorso Nazionale di Bergamo
-                    <a href="https://capolavori.cnos-fap.it/albo-doro-dei-vincitori/" target="_blank">Esposizione
-                        dei Capolavori Grafici</a> posizionandomi al 1° posto.
-                </p>
-            </div>
-        </div>
-        <div class="question">
-            <div class="top">
-                <div>Cosa è inmymind?</div>
-                <div>+</div>
-            </div>
-            <div class="text">
-                <p>
-                    È un progetto nato per soddisfare l'esigenza di tenere traccia dei miei pensieri, delle cose che
-                    imparo e delle esperienze che vivo. Questo blog non è dedicato ad un argomento in
-                    particolare, quello che scrivo rispecchia il mio percorso personale e quello che sto vivendo. Se
-                    siete curiosi di sapere di cosa parlo potete andare a piè pagina e dare un'occhiata alla sezione
-                    Topic.
-                </p>
-            </div>
-        </div>
-        <div class="question">
-            <div class="top">
-                <div>Pensare fa paura?</div>
-                <div>+</div>
-            </div>
-            <div class="text">
-                <p>
-                    Uno studio condotto dall'Università della Virginia rivela che molte persone trovano estremamente
-                    sgradevole trascorrere del tempo da sole con i propri pensieri, al punto da preferire il dolore
-                    fisico. Il professor Timothy Wilson ha ideato un esperimento in cui i partecipanti dovevano restare
-                    in
-                    una stanza vuota per 15 minuti, senza alcuno stimolo esterno, dedicandosi unicamente alla
-                    riflessione. La maggior parte dei soggetti ha trovato questa esperienza quasi insopportabile. In una
-                    variante dello studio, il 67% degli uomini e il 25% delle donne si sono persino auto-inflitti una
-                    scossa
-                    elettrica pur di sfuggire al silenzio mentale.
-                </p>
-            </div>
-        </div>
-        <div class="question">
-            <div class="top">
-                <div>Disclaimer</div>
-                <div>+</div>
-            </div>
-            <div class="text">
-                <p>
-                    Questo sito nasce anche come scommessa personale. Mi sono dedicato alla sua realizzazione dal
-                    design allo sviluppo. Ho usato HTML e CSS, come CMS non mi sono appoggiato a terzi,
-                    ma ne ho sviluppato uno che corrispondesse alle mie esigenze.
-                </p>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="avvisi-box">
-        <div class="domanda">Vuoi contattarmi? <br> Scrivi a questo indirizzo.</div>
-        <div class="risposta">
-            <div class="mail">alfredogiannetto5@gmail.com</div>
-            <div class="copia">Copia</div>
-        </div>
-    </div>
-
-
-    <div class="avvisi-box2">
-        <div class="domanda2">Vuoi supportare il mio lavoro? <br>Fai una donazione tramite IBAN / PayPal oppure offrime
-            'ncaffè.</div>
-        <div class="risposta2">
-            <button class="mail2" href="paypal.me/alfredogiannetto"><span>IBAN</span></button>
-            <a class="copia3" href="https://buymeacoffee.com/alfredogiannetto">PayPal</a>
-            <a class="copia2" href="https://buymeacoffee.com/alfredogiannetto">☕️</a>
-        </div>
-
-    </div>
-
-
-    <div class="pie">
-        <div class="pie-box">
-            <div class="nome-sito">
-                <p class="titolo">inmymind.</p><br>
-                <p class="sottotitolo">
-                    Ma ora così parla il Signore, il tuo Creatore. Non temere, perché io ti ho
-                    riscattato, ti ho chiamato per nome, tu sei mio! <br>Isaia 43:1</p>
-            </div>
-            <div>
-                <div class="pie_left">
-                    <div class="argomenti">
-                        <p class="titolo">Topic</p><br>
-                        <div>Viaggi Pazzi</div>
-                        <div>Esistenzialismo</div>
-                        <div>Crescita Personale</div>
-                        <div>Citazioni</div>
-                        <div>Nerd-amo</div>
-                        <div>Salute Mentale</div>
-                    </div>
-                    <div class="social">
-                        <p class="titolo">Social</p><br>
-                        <a class="link" href="https://www.linkedin.com/in/alfredogiannetto">Linkedin</a>
-                        <a class="link"
-                            href="https://open.spotify.com/user/gwj8p6tbu72tef8r6yz0ono4m?si=a918768a5be3443f">Spotify</a>
-                        <a class="link" href="https://www.pinterest.it/alfredogiannetto">Pinterest</a>
-                        <a class="link" href="https://www.vinted.it/member/87107740">Vinted</a>
-                        <a class="link" href="https://letterboxd.com/itsfreddie/">Letterboxd</a>
-                    </div>
-                    <div class="pagine">
-                        <p class="titolo">Menu</p><br>
-                        <a class="link" href="https://www.linkedin.com/in/alfredogiannetto">Home</a>
-                        <a class="link" href="https://www.reddit.com/user/UnlikelyMatch4750">Work</a>
-                        <a class="link" href="https://www.pinterest.it/alfredogiannetto">About</a>
-                        <a class="link" href="https://www.artstation.com/alfredogiannetto">Blog</a>
-                        <a class="link" href="https://www.artstation.com/alfredogiannetto">Contact</a>
-                    </div>
-                    <div class="privacy">
-                        <p class="titolo">Privacy</p><br>
-                        <a class="link">Home</a>
-                        <a class="link">Contact</a>
-                        <a class="link">Cookies Policy</a>
-                        <a class="link">Privacy Policy</a>
-                        <a class="link">Aggiorna Cookies</a>
-                    </div>
-                    <div class="cerca">
-                        <p class="titolo">Newsletter</p><br>
-                        <input type="text" placeholder="Inserisci mail" class="barra-cerca"></input>
-                    </div>
-                </div>
-            </div>
-            <div class="copyright">Copyright © 2025. All Rights Reserved.</div>
-</body>
-
+    <div id="footer-container"></div>
+    <script src="_assets/js/posts.js"></script>
+  </body>
 </html>
