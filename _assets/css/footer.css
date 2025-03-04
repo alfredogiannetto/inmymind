@@ -1,3 +1,4 @@
+
 .pie {
   margin: 300px auto auto auto;
   width: calc(100vw - 180px);
@@ -8,6 +9,11 @@
   align-items: center;
   padding: 40px;
   gap: 50px;
+}
+@media screen and (max-width: 500px) {
+  .pie {
+    width: calc(100vw - 120px);
+  }
 }
 .pie-center {
   height: fit-content;
