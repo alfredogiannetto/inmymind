@@ -74,38 +74,38 @@
   background-size: cover;
   background-position: center;
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
 }
 #spotify{
   background-image: url(../svg/spotify.svg);
   background-size: cover;
   background-position: center;
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
 }
 #pinterest{
   background-image: url(../svg/pinterest.svg);
   background-size: cover;
   background-position: center;
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
 }
 #vinted{
   background-image: url(../svg/vinted.svg);
   background-size: cover;
   background-position: center;
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
 }
 #letterboxd{
   background-image: url(../svg/letterboxd.svg);
   background-size: cover;
   background-position: center;
   display: block;
-  width: 28px;
-  height: 20px;
+  width: 30px;
+  height: 22px;
 }
