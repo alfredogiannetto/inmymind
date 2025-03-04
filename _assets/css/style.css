@@ -52,9 +52,12 @@
     grid-template-columns: 1fr !important;
   }
 }
-@media screen and (max-width: 100px) {
+@media screen and (max-width: 500px) {
   .content {
-    width: calc(100% - 10px) !important;
+    width: calc(100% - 40px) !important;
+  }
+  .search {
+    grid-template-columns: 1fr !important;
   }
 }
 /* ------------------------ Filtraggio ------------------------ */

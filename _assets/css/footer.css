@@ -20,13 +20,6 @@
   font-size: 30px;
   text-align: center;
 }
-.pie .argomenti {
-  display: flex;
-  flex-direction: column;
-  color: white;
-  white-space: nowrap;
-  float: left;
-}
 .pie .social {
   display: flex;
   flex-direction: row;
@@ -35,17 +28,13 @@
   width: 100%;
   gap: 25px;
 }
-.pie .pagine {
-  display: inline;
-  color: white;
-  white-space: nowrap;
-  float: left;
-}
 .pie .privacy {
-  display: inline;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: white;
   white-space: nowrap;
-  float: left;
 }
 .pie .pagine .link,
 .pie .privacy .link {
