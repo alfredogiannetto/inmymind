@@ -10,34 +10,29 @@
     <title>inmymind</title>
   </head>
   <body>
-    <div class="website-title">inmymind</div>
-    <div class="header">
-      <a href="">About</a>
-      <a href="">Photo</a>
-      <a href="">Blog</a>
+    <div class="first-page">
+        <div class="header">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="work.html">Work</a>
+            <a href="blog.html">Blog</a>
+        </div>
+        <div class="website-title">inmymind</div>
     </div>
 
-    <div class="content">
-      <div class="search">
-        <select id="yearFilter">
-          <option value="anno">Anno</option>
-          <option value="2025">2025</option>
-        </select>
-        <div>
-          <select id="topicFilter">
-            <option value="">Argomento</option>
-            <option value="Viaggi">Viaggi</option>
-            <option value="Crescita Personale">Crescita Personale</option>
-            <option value="Salute Mentale">Salute Mentale</option>
-            <option value="Fede">Fede</option>
-            <option value="Nerd-amo">Nerd-amo</option>
-          </select>
-        </div>
-      </div>
+    <div class="last-thing">
+        <p class="group-title">Recent Posts</p>
       <div id="posts-container"></div>
     </div>
 
+    <div class="last-thing">
+        <p class="group-title">Recent Work</p>
+      <div id="works-container"></div>
+    </div>
+
+
     <div id="footer-container"></div>
-    <script src="_assets/js/posts.js"></script>
+    <script src="_assets/js/home-posts.js"></script>
+    <script src="_assets/js/home-works.js"></script>
   </body>
 </html>

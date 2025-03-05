@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="_assets/svg/icon.svg" />
+    <link rel="stylesheet" href="_assets/css/settings.css" />
+    <link rel="stylesheet" href="_assets/css/blog.css" />
+    <script src="_assets/js/footer.js"></script>
+    <title>inmymind</title>
+  </head>
+  <body>
+    <div class="website-title">inmymind</div>
+    <div class="header">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="work.html">Work</a>
+    </div>
+
+    <div class="content">
+      <div class="search">
+        <select id="yearFilter">
+          <option value="anno">Anno</option>
+          <option value="2025">2025</option>
+        </select>
+        <div>
+          <select id="topicFilter">
+            <option value="">Argomento</option>
+            <option value="Viaggi">Viaggi</option>
+            <option value="Crescita Personale">Crescita Personale</option>
+            <option value="Salute Mentale">Salute Mentale</option>
+            <option value="Fede">Fede</option>
+            <option value="Nerd-amo">Nerd-amo</option>
+          </select>
+        </div>
+      </div>
+      <div id="posts-container"></div>
+    </div>
+
+    <div id="footer-container"></div>
+    <script src="_assets/js/posts.js"></script>
+  </body>
+</html>
