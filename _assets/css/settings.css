@@ -44,5 +44,7 @@ body {
   color: white;
 }
 :root{
-  --green: #59591D;
+  --green: #302721;
+  --light-green: #3f332c;
+  --line-green: #5f554f;
 }
