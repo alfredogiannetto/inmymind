@@ -63,31 +63,6 @@
     opacity: 0% !important;
   }
 }
-/* ------------------------ Filtraggio ------------------------ */
-
-.search {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  background-color: #6d6b30;
-  gap: 13px;
-  padding: 25px;
-  height: fit-content;
-  border-radius: 1px;
-}
-#yearFilter,
-#topicFilter {
-  width: 100%;
-  font-size: 15px;
-  font-family: "Gambetta";
-  border: none;
-  background-color: var(--green);
-  padding: 16px 22px 16px 22px;
-  color: white;
-  outline: none;
-  letter-spacing: 0.3px;
-  letter-spacing: 0.5px;
-  border-radius: 1px;
-}
 /* ------------------------ elenco lavori ------------------------ */
 #posts-container {
   display: grid;
@@ -105,7 +80,7 @@
   gap: 9px;
   padding: 9px 9px 9px 9px;
   border: solid 1px #949474;
-  border-radius: 2px 2px 0 0;
+  border-radius: 2px;
   flex-shrink: 0;
 }
 .post .image {

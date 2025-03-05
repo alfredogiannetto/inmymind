@@ -1,243 +1,351 @@
-.header{
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    position: relative;
-    top: 80px;
-    gap: 30px;
+.header {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  top: 80px;
+  gap: 30px;
 }
-.header a{
-    letter-spacing: 0.5px;
-    color: white;
-    text-decoration: none;
+.header a {
+  letter-spacing: 0.5px;
+  color: white;
+  text-decoration: none;
 }
-.header a:hover{
-    text-decoration: underline;
+.header a:hover {
+  text-decoration: underline;
 }
-.first-page{
-    height: 100vh;
-    width: 100vw;
-    background-image: url(../img/home/clo.gif);
-    background-size: cover;
-    overflow: hidden;
+.first-page {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../img/home/fied.gif);
+  filter: grayscale(1) contrast(1) brightness(1);
+  background-size: cover;
+  overflow: hidden;
 }
-.website-title{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Piazzolla";
-    font-size: 19rem;
-    font-weight: 700;
-    position: absolute;
-    bottom: -70px;
-    overflow: hidden;
+.first-page::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 50%;
+}
+.website-title {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Piazzolla";
+  font-size: 50vw;
+  font-weight: 700;
+  overflow: hidden;
 }
 
 /* ------------------------ Elenco Post ------------------------ */
 .last-thing {
-    margin: 150px auto;
-    display: flex;
-    flex-direction: column;
-    width: 1100px;
-    overflow: hidden;
-    gap: 50px;
-  }
+  margin: 150px auto;
+  display: flex;
+  flex-direction: column;
+  width: 1100px;
+  overflow: hidden;
+  gap: 50px;
+}
 .last-thing .group-title {
-    font-size: 22px;
-    width: 100%;
-    height: 50px;
-    text-align: center;
-    border-bottom: solid 0.5px #949474;
-  }
-  @media (max-width: 1200px) {
-    .last-thing {
-      width: calc(100% - 90px) !important;
-    }
-  }
-  @media screen and (max-width: 900px) {
-    #posts-container {
-      grid-template-columns: 1fr !important;
-    }
-    #works-container {
-      grid-template-columns: 1fr !important;
-    }
-  }
-  @media screen and (max-width: 500px) {
-    .last-thing {
-      width: calc(100% - 40px) !important;
-    }
-  }
-#posts-container {
-    display: grid;
-    column-gap: 13px;
-    row-gap: 20px;
-    height: fit-content;
-    grid-template-columns: 1fr 1fr;
-    text-overflow: ellipsis;
-  }
-  .post {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    gap: 9px;
-    padding: 9px 9px 0 9px;
-    border-top: solid 1px #949474;
-    border-left: solid 1px #949474;
-    border-right: solid 1px #949474;
-    border-radius: 2px 2px 0 0;
-    flex-shrink: 0;
-  }
-  .post .image{
-    position: relative;
-    width: 100%;
-    height: 250px;
-  }
-  .post .image::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
-    background: linear-gradient(to top, rgba(89, 89, 39, 100), rgba(89, 89, 39, 0));
-  }
-  .post .info{
-    position: relative;
-    padding-left: 20px;
-    padding-right: 20px;
-    display: grid;
-    grid-template-columns: max-content max-content auto;
-    gap: 14px;
-    width: calc(100% - 20px*2);
-    background-color: #6D6B30;
-    height: 55px;
-    align-items: center;
-    overflow: hidden;
-  }
-  .post .date {
-    font-family: "Gambetta-Italic";
-    display: block;
-    color: white;
-  }
-  .post .title {
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    overflow: hidden;
-    max-width: 100%;
-    width: 100px;
-    min-width: 100%;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-  /* -------------- last work ------------------ */
+  font-size: 22px;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  border-bottom: solid 0.5px #949474;
+}
+@media (max-width: 1200px) {
   .last-thing {
-    margin: 150px auto;
-    display: flex;
-    flex-direction: column;
-    width: 1100px;
-    overflow: hidden;
-    gap: 50px;
+    width: calc(100% - 90px) !important;
   }
-  .last-thing .group-title {
-    font-size: 22px;
-    width: 100%;
-    height: 50px;
-    text-align: center;
-    border-bottom: solid 0.5px #949474;
+}
+@media screen and (max-width: 900px) {
+  #posts-container {
+    grid-template-columns: 1fr !important;
   }
-  /* ------------------------ elenco lavori ------------------------ */
+  #works-container {
+    grid-template-columns: 1fr !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .last-thing {
+    width: calc(100% - 40px) !important;
+  }
+}
+#posts-container {
+  display: grid;
+  column-gap: 13px;
+  row-gap: 20px;
+  height: fit-content;
+  grid-template-columns: 1fr 1fr;
+  text-overflow: ellipsis;
+}
+.post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 9px;
+  padding: 9px 9px 0 9px;
+  border-top: solid 1px #949474;
+  border-left: solid 1px #949474;
+  border-right: solid 1px #949474;
+  border-radius: 2px 2px 0 0;
+  flex-shrink: 0;
+}
+.post .image {
+  position: relative;
+  width: 100%;
+  height: 250px;
+}
+.post .image::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(
+    to top,
+    rgba(89, 89, 39, 100),
+    rgba(89, 89, 39, 0)
+  );
+}
+.post .info {
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: grid;
+  grid-template-columns: max-content max-content auto;
+  gap: 14px;
+  width: calc(100% - 20px * 2);
+  background-color: #6d6b30;
+  height: 55px;
+  align-items: center;
+  overflow: hidden;
+}
+.post .date {
+  font-family: "Gambetta-Italic";
+  display: block;
+  color: white;
+}
+.post .title {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  overflow: hidden;
+  max-width: 100%;
+  width: 100px;
+  min-width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* -------------- last work ------------------ */
+.last-thing {
+  margin: 150px auto;
+  display: flex;
+  flex-direction: column;
+  width: 1100px;
+  overflow: hidden;
+  gap: 50px;
+}
+.last-thing .group-title {
+  font-size: 22px;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  border-bottom: solid 0.5px #949474;
+}
+/* ------------------------ elenco lavori ------------------------ */
 #works-container {
-    display: grid;
-    column-gap: 13px;
-    row-gap: 20px;
-    height: fit-content;
-    grid-template-columns: 1fr 1fr;
-    text-overflow: ellipsis;
+  display: grid;
+  column-gap: 13px;
+  row-gap: 20px;
+  height: fit-content;
+  grid-template-columns: 1fr 1fr;
+  text-overflow: ellipsis;
+}
+.work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 9px;
+  padding: 9px 9px 9px 9px;
+  border: solid 1px #949474;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+.work .image {
+  position: relative;
+  width: 100%;
+  height: 340px;
+}
+.work .info {
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  width: calc(100% - 20px * 2);
+  background-color: #6d6b30;
+  height: 100%;
+  align-items: center;
+  overflow: hidden;
+  transition: all 0.6s;
+}
+.work .info:hover {
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  width: calc(100% - 20px * 2);
+  background-color: #6d6b30;
+  opacity: 0%;
+  height: 100%;
+  align-items: center;
+  overflow: hidden;
+  transition: all 0.6s;
+}
+.work .date {
+  font-family: "Gambetta-Italic";
+  display: block;
+  color: white;
+}
+.work .title {
+  color: white;
+  text-decoration: none;
+  overflow: hidden;
+  max-width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#work-container .no-post {
+  grid-column: 1 / -1;
+  width: 100%;
+  height: 325px;
+  background-color: #6d6b30;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url(../svg/arrow.svg);
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position-x: calc(100% - 15px);
+  background-position-y: 52%;
+  border: 1px solid #dfdfdf;
+}
+
+/* ------------------------ MAIL ------------------------ */
+
+.avvisi-box {
+  width: 700px;
+  background-color: #6d6b30;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 100px auto auto auto;
+  padding: 50px;
+}
+@media screen and (max-width: 900px) {
+  .avvisi-box {
+    width: calc(100vw - 140px);
   }
-  .work {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    gap: 9px;
-    padding: 9px 9px 9px 9px;
-    border: solid 1px #949474;
-    border-radius: 2px 2px 0 0;
-    flex-shrink: 0;
+  .donation {
+    width: calc(100vw - 140px) !important;
   }
-  .work .image {
-    position: relative;
-    width: 100%;
-    height: 250px;
+  .risposta {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 15px;
+    column-gap: 10px;
+    height: fit-content !important;
+    line-height: 70px;
   }
-  .work .info {
-    position: relative;
-    padding-left: 20px;
-    padding-right: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 14px;
-    width: calc(100% - 20px * 2);
-    background-color: #6d6b30;
-    height: 100%;
-    align-items: center;
-    overflow: hidden;
-    transition: all 0.6s;
+  .answer {
+    display: flex !important;
+    flex-direction: column !important;
+    height: fit-content !important;
   }
-  .work .info:hover {
-    position: relative;
-    padding-left: 20px;
-    padding-right: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 14px;
-    width: calc(100% - 20px * 2);
-    background-color: #6d6b30;
-    opacity: 0%;
-    height: 100%;
-    align-items: center;
-    overflow: hidden;
-    transition: all 0.6s;
+  .answer button {
+    display: block !important;
+    height: 70px !important;
   }
-  .work .date {
-    font-family: "Gambetta-Italic";
-    display: block;
-    color: white;
-  }
-  .work .title {
-    color: white;
-    text-decoration: none;
-    overflow: hidden;
-    max-width: 100%;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-  #work-container .no-post {
-    grid-column: 1 / -1;
-    width: 100%;
-    height: 325px;
-    background-color: #6d6b30;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-  }
-  select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background-image: url(../svg/arrow.svg);
-    background-size: 15px;
-    background-repeat: no-repeat;
-    background-position-x: calc(100% - 15px);
-    background-position-y: 52%;
-    border: 1px solid #dfdfdf;
-  }
-  
+}
+
+.domanda {
+  color: white;
+  font-size: 22px;
+}
+
+.risposta {
+  display: grid;
+  grid-template-columns: calc(70% - 10px) 30%;
+  column-gap: 10px;
+  height: 70px;
+  line-height: 70px;
+}
+
+.mail {
+  background-color: var(--green);
+  font-size: 17px;
+  color: #949474;
+  padding: 0 0 0 30px;
+}
+
+.copia {
+  background-color: #474618;
+  text-align: center;
+  color: white;
+  font-size: 17px;
+}
+
+/* ------------------------ PAYPAL ------------------------ */
+.donation {
+  width: 700px;
+  background-color: #6d6b30;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 30px auto;
+  padding: 50px;
+}
+.question {
+  color: white;
+  font-size: 22px;
+}
+.answer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  column-gap: 10px;
+  height: 100px;
+  line-height: 100px;
+}
+.iban,
+.paypal,
+.buymecoffee {
+  font-family: "Gambetta";
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  background-color: var(--green);
+  border: none;
+}
