@@ -30,16 +30,14 @@ Dal punto di vista tecnico, Il Gigante di Ferro è un’opera straordinaria che 
 
 Nonostante la sua bellezza artistica e narrativa, Il Gigante di Ferro fu un flop al botteghino al momento della sua uscita, a causa di una scarsa campagna di marketing da parte della Warner Bros. Tuttavia, con il passare degli anni, il film ha guadagnato un seguito di fan sempre più numeroso, diventando un classico dell’animazione apprezzato da critici e spettatori di tutte le età.
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2073179942084518"
+     crossorigin="anonymous"></script>
 
 <br>
 <br>
 
 <p class="sottotitolo">Un successo ritardato</p>
 Nonostante la sua bellezza artistica e narrativa, Il Gigante di Ferro fu un flop al botteghino al momento della sua uscita, a causa di una scarsa campagna di marketing da parte della Warner Bros. Tuttavia, con il passare degli anni, il film ha guadagnato un seguito di fan sempre più numeroso, diventando un classico dell’animazione apprezzato da critici e spettatori di tutte le età.
-
-
-<br>
-<br>
 
 <div class="normal-img" style="display: flex; flex-direction: column; justify-content: center;">
 <img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p23609_p_v10_ag.jpg"/>
