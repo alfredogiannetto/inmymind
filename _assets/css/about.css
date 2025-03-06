@@ -26,8 +26,8 @@
 .content .images{
     overflow-y: hidden;
     white-space: nowrap;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 15px;
     height: fit-content;
     width: 700px;
@@ -37,7 +37,16 @@
     background-size: cover;
     background-position: center;
 }
-.content .img-box{
+.content .img-box1{
+    width: auto;
+    border: solid 1px var(--line-green);
+    padding: 10px;
+    border-radius: 2px;
+    height: fit-content;
+    animation: scroll 100s linear infinite;
+}
+.content .img-box2{
+    width: auto;
     border: solid 1px var(--line-green);
     padding: 10px;
     border-radius: 2px;
@@ -45,15 +54,28 @@
     animation: scroll 100s linear infinite;
 }
 .content .img1{
-    width: 300px;
+    width: calc(100% -10px*2);
     padding: 10px;
     height: 400px;
     background-image: url(../img/about/img1.JPG);
     background-size: cover;
     background-position: center;
 }
+@media screen and (max-width: 900px) {
+    .content .images{
+        grid-template-columns: 1fr !important;
+        width: calc(100vw - 60px) !important;
+    }
+    .content .img-box2{
+        width: 100% !important;
+        display: none !important;
+    }
+    .content .img2{
+        height: 900px;
+    }
+  }
 .content .img2{
-    width: 300px;
+    width: calc(100% -10px*2);
     padding: 10px;
     height: 400px;
     background-image: url(../img/about/img5.JPG);
