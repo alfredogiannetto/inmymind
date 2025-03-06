@@ -1,4 +1,5 @@
 .header {
+  top: 0;
   width: calc(100vw - 40px*2);
   padding-left: 40px;
   padding-right: 40px;
@@ -9,7 +10,7 @@
   justify-content: space-between;
   position: fixed;
   margin: auto;
-  font-size: 22px;
+  font-size: 24px;
   z-index: 1;
   background-color: var(--green);
 }
@@ -22,7 +23,7 @@
   display: flex;
   flex-direction: row;
   gap: 25px;
-  font-size: 16px;
+  font-size: 15px;
   letter-spacing: 1px;
 }
 .menu a {
