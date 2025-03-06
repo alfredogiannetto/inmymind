@@ -64,7 +64,7 @@
 @media screen and (max-width: 900px) {
     .content .images{
         grid-template-columns: 1fr !important;
-        width: calc(100vw - 60px) !important;
+        width: calc(100vw - 80px) !important;
     }
     .content .img-box2{
         width: 100% !important;
