@@ -44,10 +44,8 @@ Nonostante la sua bellezza artistica e narrativa, Il Gigante di Ferro fu un flop
 <div class="normal-img" style="display: flex; flex-direction: column; justify-content: center;">
 <img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p23609_p_v10_ag.jpg"/>
 </div>
-<br>
-<br>
 
-<p class="disclaimer">* Se hai trovato errori di battitura o pensi che ci siano errori nel contenuto contattami pure su <a href="https://t.me/freddiefreddie">Telegram</a>.</p>
+
 
 
 
