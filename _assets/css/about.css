@@ -30,19 +30,12 @@
     flex-direction: row;
     gap: 15px;
     height: fit-content;
-    width: 100vw;
+    width: 700px;
+    margin: auto;
     position: relative;
     left: 0px;
     background-size: cover;
     background-position: center;
-}
-@keyframes scroll {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-200%);
-    }
 }
 .content .img-box{
     border: solid 1px var(--line-green);
@@ -63,7 +56,7 @@
     width: 300px;
     padding: 10px;
     height: 400px;
-    background-image: url(../img/about/img6.jpeg);
+    background-image: url(../img/about/img5.JPG);
     background-size: cover;
     background-position: center;
 }
