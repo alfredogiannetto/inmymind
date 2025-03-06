@@ -16,16 +16,17 @@
 }
 @media screen and (max-width: 700px) {
   .header {
-    flex-direction: column !important;
+    flex-direction: row !important;
     justify-content: center !important;
-    height: 120px !important;
+    height: 50px !important;
+    border-bottom: solid 1px var(--line-green);
   }
   .header .titolo {
-    display: none !important;
+    display: auto !important;
+    font-size: 22px;
   }
   .header .menu {
-    justify-content: center !important;
-    align-items: center !important;
+    display: none !important;
   }
 }
 .header .titolo {
