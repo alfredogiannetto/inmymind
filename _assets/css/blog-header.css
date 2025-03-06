@@ -18,7 +18,7 @@
   .header {
     flex-direction: column !important;
     justify-content: center !important;
-    height: 110px !important;
+    height: 120px !important;
   }
   .header .titolo {
     display: none !important;
