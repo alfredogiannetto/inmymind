@@ -26,7 +26,6 @@ document.addEventListener("DOMContentLoaded", function () {
             const formattedDate = `${day} ${month} ${year}`;
 
             document.getElementById("post-title").textContent = post.title;
-            document.getElementById("post-author").textContent = post.category;
             document.getElementById("post-date").textContent = formattedDate;
 
             // Imposta l'immagine di sfondo nel div .background
