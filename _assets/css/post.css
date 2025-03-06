@@ -8,7 +8,7 @@
 }
 @media screen and (max-width: 1000px) {
     #post{
-        width: calc(100vw - 80px) !important;
+        width: calc(100vw - 40px) !important;
     }
   }
 #post-title{
