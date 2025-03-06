@@ -116,13 +116,12 @@
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 5px;
-  font-family: "Gambetta", serif;
+  font-family: "Piazzolla";
   font-style: normal;
-  font-size: 28px;
+  font-size: 24px;
   margin-bottom: 27px;
   color: var(--bianco);
   opacity: 75%;
-  letter-spacing: -2px;
 }
 #post-content .normal-img {
   width: 100%;
