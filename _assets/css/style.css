@@ -1,48 +1,38 @@
-.header {
-  width: 100vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  position: absolute;
-  top: 80px;
-  gap: 30px;
-}
-@media screen and (max-width: 700px) {
-    .header {
-        top: 50px !important;
-      }
-}
-.header a {
-  letter-spacing: 0.5px;
-  color: white;
-  text-decoration: none;
-}
-.header a:hover {
-  text-decoration: underline;
+body{
+  overflow-x: hidden;
 }
 .first-page {
+  font-family: "Piazzolla";
   height: 100vh;
+  opacity: 100%;
   width: 100vw;
-  background-image: url(../img/home/fied.gif);
+  background-image: url(../img/home/fild.gif);
   filter: grayscale(1) contrast(1) brightness(1);
   background-size: cover;
   position: relative;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   justify-content: end;
+  font-size: 300px;
+  font-weight: 600;
 }
 .website-title {
-  width: 100%;
-  height: fit-content;
+  cursor: default;
+  width: 3000px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: "Piazzolla";
   font-size: 735px;
   font-weight: 700;
-  position: relative;
-  bottom: -20px;
   overflow: hidden;
+}
+@media screen and (max-width: 900px) {
+  .website-title {
+    width: 2000px !important;
+  }
 }
 
 /* ------------------------ Elenco Post ------------------------ */
@@ -171,7 +161,7 @@
   grid-template-columns: 1fr 1fr;
   text-overflow: ellipsis;
 }
-.work {
+#works-container .work {
   display: flex;
   flex-direction: column;
   align-items: center;

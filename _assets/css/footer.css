@@ -57,11 +57,12 @@
 }
 .argomenti a,
 .privacy a {
-  font-size: 17px;
+  font-size: 16px;
   line-height: 25px;
   text-decoration: underline 1.3px;
 }
 .copyright {
+  font-size: 15px;
   width: 100%;
   height: 85px;
   display: flex;
