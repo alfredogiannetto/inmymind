@@ -3,27 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="_assets/svg/icon.svg" />
     <link rel="stylesheet" href="_assets/css/settings.css" />
-    <link rel="stylesheet" href="_assets/css/work.css"/>
+    <link rel="stylesheet" href="_assets/css/post.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>
+    <script src="_assets/js/blog-header.js"></script>
     <script src="_assets/js/footer.js"></script>
+    <script src="_assets/js/work.js"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2073179942084518"
      crossorigin="anonymous"></script>
     <title>inmymind</title>
   </head>
   <body>
-    <div class="website-title">inmymind</div>
-    <div class="header">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="blog.html">Blog</a>
+    <div id="header-container"></div>
+    <div id="post">
+      <div id="post-info">
+        <div id="post-author"></div>
+      </div>
+      <p id="post-title"></p>
+      <div class="bar">
+        <div class="where">
+          <div class="emoji">📍</div>
+          <div class="text">Roma</div>
+        </div>
+        <div id="post-date"></div>
+      </div>
+      <div id="post-content"></div>
     </div>
-
-    <div class="content">
-      <div id="posts-container"></div>
-    </div>
-
     <div id="footer-container"></div>
-    <script src="_assets/js/works.js"></script>
   </body>
 </html>

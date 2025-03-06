@@ -1,17 +1,17 @@
 [
   {
     "title": "Upper Record & Management",
-    "date": "2024-9-30",
+    "date": "2023-09-30",
     "author": "Alfredo Giannetto",
-    "url": "post.html?id=come-organizzare-un-viaggio-in-islanda",
-    "category": "Viaggi",
+    "url": "work.html?id=upper",
+    "category": "Logo Redesign",
     "image": "/_works/30-09-2023-upper/img/upper.png"
   },
   {
     "title": "Eco di Bergamo",
     "date": "2024-9-30",
     "author": "Alfredo Giannetto",
-    "url": "post.html?id=come-organizzare-un-viaggio-in-islanda",
+    "url": "work.html?id=come-organizzare-un-viaggio-in-islanda",
     "category": "Viaggi",
     "image": "/_works/30-09-2023-bergamo/img/bergamo.png"
   },
@@ -19,7 +19,7 @@
     "title": "EcoRoute",
     "date": "2024-9-30",
     "author": "Alfredo Giannetto",
-    "url": "post.html?id=come-organizzare-un-viaggio-in-islanda",
+    "url": "work.html?id=come-organizzare-un-viaggio-in-islanda",
     "category": "Viaggi",
     "image": "/_works/30-09-2023-ecoroute/img/ecoroute.png"
   },
@@ -27,7 +27,7 @@
     "title": "MezzaVera",
     "date": "2024-9-30",
     "author": "Alfredo Giannetto",
-    "url": "post.html?id=come-organizzare-un-viaggio-in-islanda",
+    "url": "work.html?id=come-organizzare-un-viaggio-in-islanda",
     "category": "Viaggi",
     "image": "/_works/30-09-2023-mezzavera/img/mezzavera.png"
   }
