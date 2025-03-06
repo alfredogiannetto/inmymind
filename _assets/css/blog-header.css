@@ -19,7 +19,7 @@
     justify-content: center;
   }
   .header .titolo {
-    display: none;
+    display: none !important;
   }
   .header .menu {
     justify-content: center !important;
