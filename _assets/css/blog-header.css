@@ -1,16 +1,17 @@
 .header {
   top: 0;
-  width: calc(100vw - 40px*2);
-  padding-left: 40px;
-  padding-right: 40px;
-  height: 90px;
+  width: calc(100vw - 25px*2);
+  padding-left: 25px;
+  padding-right: 25px;
+  height: 60px;
+  border-bottom: solid 1px var(--line-green);
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   position: fixed;
   margin: auto;
-  font-size: 24px;
+  font-size: 20px;
   z-index: 1;
   background-color: var(--green);
 }
@@ -37,8 +38,8 @@
 .header .menu {
   display: flex;
   flex-direction: row;
-  gap: 25px;
-  font-size: 15px;
+  gap: 15px;
+  font-size: 14px;
   letter-spacing: 1px;
 }
 .menu a {

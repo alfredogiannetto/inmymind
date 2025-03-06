@@ -1,63 +1,70 @@
 /* ------------------------ Post ------------------------ */
-#post{
-    position: relative;
-    top: 140px;
-    margin: auto;
-    width: 800px;
-    height: fit-content;
+#post {
+  position: relative;
+  top: 140px;
+  margin: auto;
+  width: 800px;
+  height: fit-content;
 }
 @media screen and (max-width: 1000px) {
-    #post{
-        width: calc(100vw - 60px) !important;
-        top: 120px;
-    }
+  #post {
+    width: calc(100vw - 60px) !important;
+    top: 120px;
   }
-#post-title{
-    font-size: 35px;
-    margin-top: 25px;
-    font-weight: 500;
-    font-family: 'Piazzolla';
-    line-height: 40px;
-    color: white;
 }
-#post-info{
+#post-title {
+  font-size: 35px;
+  margin-top: 25px;
+  font-weight: 500;
+  font-family: "Piazzolla";
+  line-height: 40px;
+  color: white;
+}
+#post-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 16px;
+  height: 42px;
+}
+.bar {
+  margin-top: 40px;
+  width: 100%;
+  height: 45px;
+  border-top: solid 1px var(--line-green);
+  border-bottom: solid 1px var(--line-green);
+  display: flex;
+  justify-content: space-between;
+  gap: 13px;
+  align-items: center;
+  font-family: "Gambetta";
+  font-weight: 100;
+}
+.where {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    gap: 12px;
+}
+#post-author {
+  display: flex;
+  align-items: center;
+  padding: 0px 23px 0px 23px;
+  height: 100%;
+  background-color: var(--light-green);
+}
+#post-date {
     font-size: 16px;
-    height: 42px;
+    margin-right: 10px;
 }
-.quotes{
-    margin-top: 40px;
-    width: 100%;
-    height: 45px;
-    border-top: solid 0.5px white;
-    border-bottom: solid 0.5px white;
-    display: flex;
-    gap: 13px;
-    align-items: center;
-    font-family: "Gambetta";
-    font-weight: 100;
-  }
-#post-author{
-    display: flex;
-    align-items: center;
-    padding: 0px 23px 0px 23px;
-    height: 100%;
-    background-color: var(--light-green);
-}
-#post-date{
-    padding: 0px 20px 0px 20px;
-}
-#post-content{
-    max-width: 100%;
-    margin-top: 45px;
-    font-size: 16.5px;
+#post-content {
+  max-width: 100%;
+  margin-top: 45px;
+  font-size: 16.5px;
 }
 #post-content p,
 #post-content h1,
 #post-content h2,
-#post-content h3, 
+#post-content h3,
 #post-content b,
 #post-content strong,
 #post-content i,
@@ -68,61 +75,61 @@
 #post-content ins,
 #post-content sub,
 #post-content sup {
-    font-family: 'Gambetta', serif;
-    font-style: normal;
-    color: var(--bianco);
-    opacity: 75%;
-    font-weight: 400;
-    line-height: 25px;
+  font-family: "Gambetta", serif;
+  font-style: normal;
+  color: var(--bianco);
+  opacity: 75%;
+  font-weight: 400;
+  line-height: 25px;
 }
 #post-content a {
-    font-family: 'Gambetta', serif;
-    font-style: normal;
-    color: lightblue;
-    opacity: 75%;
-    font-weight: 400;
-    line-height: 25px;
+  font-family: "Gambetta", serif;
+  font-style: normal;
+  color: lightblue;
+  opacity: 75%;
+  font-weight: 400;
+  line-height: 25px;
 }
 #post-content img {
-    opacity: 80%;
+  opacity: 80%;
 }
 #post-content * {
-    font-family: 'Gambetta', serif;
-    font-style: normal;
-    color: var(--bianco);
-    font-weight: 400;
-    line-height: 25px;
+  font-family: "Gambetta", serif;
+  font-style: normal;
+  color: var(--bianco);
+  font-weight: 400;
+  line-height: 25px;
 }
 #post-content .caption {
-    font-family: "Gambetta-Italic";
-    color: var(--bianco);
-    font-size: 15px;
-    font-style: italic;
-    opacity: 75%;
-    font-weight: 400;
-    line-height: 25px;
-    margin-top: 10px;
-    border-color: white;
-    border-width: 1px;
+  font-family: "Gambetta-Italic";
+  color: var(--bianco);
+  font-size: 15px;
+  font-style: italic;
+  opacity: 75%;
+  font-weight: 400;
+  line-height: 25px;
+  margin-top: 10px;
+  border-color: white;
+  border-width: 1px;
 }
 #post-content .sottotitolo {
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 5px;
-    font-family: 'Gambetta', serif;
-    font-style: normal;
-    font-size: 28px;
-    margin-bottom: 27px;
-    color: var(--bianco);
-    opacity: 75%;
-    letter-spacing: -2px;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 5px;
+  font-family: "Gambetta", serif;
+  font-style: normal;
+  font-size: 28px;
+  margin-bottom: 27px;
+  color: var(--bianco);
+  opacity: 75%;
+  letter-spacing: -2px;
 }
-#post-content .normal-img{
-    width: 100%;
-    margin-top: 40px;
+#post-content .normal-img {
+  width: 100%;
+  margin-top: 40px;
 }
-#post-content .custom-img{
-    width: 100%;
-    margin-top: 80px;
-    margin-bottom: 30px;
+#post-content .custom-img {
+  width: 100%;
+  margin-top: 80px;
+  margin-bottom: 30px;
 }
