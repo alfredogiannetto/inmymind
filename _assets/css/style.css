@@ -313,7 +313,7 @@ select {
 
 /* ------------------------ PAYPAL ------------------------ */
 .donation {
-  width: 800px;
+  width: 700px;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -326,6 +326,15 @@ select {
   color: white;
   font-size: 22px;
   text-align: center;
+}
+.question p {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  margin: auto;
 }
 .question .top {
   color: white;

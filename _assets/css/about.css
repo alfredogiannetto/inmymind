@@ -3,10 +3,10 @@
     flex-direction: column;
     width: 100vw;
     position: relative;
-    top: 130px;
+    top: 150px;
     margin: auto;
     height: fit-content;
-    gap: 50px;
+    gap: 55px;
 }
 @media screen and (max-width: 700px) {
     .content .text{
@@ -19,7 +19,7 @@
     margin: auto;
 }
 .text span{
-    font-size: 17px;
+    font-size: 19px;
     width: 700px;
     margin: auto;
 }
@@ -98,4 +98,7 @@
     background-image: url(../img/about/img8.jpeg);
     background-size: cover;
     background-position: center;
+}
+.cv{
+    color: white;
 }
