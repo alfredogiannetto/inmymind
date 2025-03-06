@@ -1,109 +1,5 @@
 [
   {
-    "title": "Come organizzare un viaggio a piedi in Islanda?",
-    "date": "2024-9-30",
-    "author": "Alfredo Giannetto",
-    "url": "post.html?id=come-organizzare-un-viaggio-in-islanda",
-    "category": "Viaggi",
-    "image": "/_assets/img/blog/IMG_2087.png"
-  },
-  {
-    "title": "Da Roma in Islanda in bici: Giorno 1",
-    "date": "2024-11-5",
-    "author": "Alfredo Giannetto",
-    "url": "post.html?id=come-organizzare-un-viaggio-in-islanda",
-    "category": "Viaggi",
-    "image": "https://i.pinimg.com/736x/b2/d9/d2/b2d9d26d221fa2dbfa25fa7c37e414a1.jpg"
-  },
-  {
-    "title": "Come stare bene con se stessi?",
-    "date": "2024-12-25",
-    "author": "Alfredo Giannetto",
-    "url": "post.html?id=come-organizzare-un-viaggio-in-islanda",
-    "category": "Salute Mentale",
-    "image": "https://i.pinimg.com/736x/6f/6e/32/6f6e32613fe8ef49c76b581990310b6d.jpg"
-  },
-  {
-    "title": "Merlin: Una serie TV alla quale sono molto legato",
-    "date": "2025-11-9",
-    "author": "Alfredo Giannetto",
-    "url": "post.html?id=come-organizzare-un-viaggio-in-islanda",
-    "category": "Nerd-amo",
-    "image": "https://www.hallofseries.com/wp-content/uploads/2023/05/Merlin-BBC.webp"
-  },
-  {
-    "title": "Diventare grandi",
-    "date": "2025-11-9",
-    "author": "Alfredo Giannetto",
-    "url": "post.html?id=come-organizzare-un-viaggio-in-islanda",
-    "category": "Salute Mentale",
-    "image": "https://i.pinimg.com/736x/7e/e1/2a/7ee12a4a3769f5f4c8cc0b1c730dbdb7.jpg"
-  },
-  {
-    "title": "Quel vuoto che non ti da pace",
-    "date": "2025-11-9",
-    "author": "Alfredo Giannetto",
-    "url": "post.html?id=come-organizzare-un-viaggio-in-islanda",
-    "category": "Salute Mentale",
-    "image": "https://i.pinimg.com/736x/83/9e/9f/839e9f1f7ff218a0443d27d7404aa5cf.jpg"
-  },
-  {
-    "title": "Trovare il senso della vita",
-    "date": "2025-11-9",
-    "author": "Alfredo Giannetto",
-    "url": "post.html?id=come-organizzare-un-viaggio-in-islanda",
-    "category": "Salute Mentale",
-    "image": "https://i.pinimg.com/736x/2f/66/f2/2f66f2d2595c81605b4705b529b1e88d.jpg"
-  },
-  {
-    "title": "Siamo tutti malati?",
-    "date": "2025-11-9",
-    "author": "Alfredo Giannetto",
-    "url": "post.html?id=come-organizzare-un-viaggio-in-islanda",
-    "category": "Salute Mentale",
-    "image": "https://i.pinimg.com/736x/a0/e7/f5/a0e7f5b2a72a2f3f436341256a7c9b6e.jpg"
-  },
-  {
-    "title": "La dolcezza",
-    "date": "2025-11-9",
-    "author": "Alfredo Giannetto",
-    "url": "post.html?id=come-organizzare-un-viaggio-in-islanda",
-    "category": "Salute Mentale",
-    "image": "https://i.pinimg.com/736x/b7/90/cd/b790cd0202e51760d215775ce97e0c61.jpg"
-  },
-  {
-    "title": "La passione",
-    "date": "2025-11-9",
-    "author": "Alfredo Giannetto",
-    "url": "post.html?id=come-organizzare-un-viaggio-in-islanda",
-    "category": "Salute Mentale",
-    "image": "https://i.pinimg.com/736x/59/3b/8a/593b8ad48412c2ee027a3a354ae6f40d.jpg"
-  },
-  {
-    "title": "Il desiderio di famiglia",
-    "date": "2025-11-9",
-    "author": "Alfredo Giannetto",
-    "url": "post.html?id=come-organizzare-un-viaggio-in-islanda",
-    "category": "Salute Mentale",
-    "image": "https://i.pinimg.com/736x/69/46/35/6946350874e2d518ede50248e914e50a.jpg"
-  },
-  {
-    "title": "La differenza tra stare bene con se stessi e bastare a se stessi",
-    "date": "2025-11-9",
-    "author": "Alfredo Giannetto",
-    "url": "post.html?id=come-organizzare-un-viaggio-in-islanda",
-    "category": "Salute Mentale",
-    "image": "https://i.pinimg.com/736x/a0/bf/89/a0bf89448de5dc76dc959d23a8d89d80.jpg"
-  },
-  {
-    "title": "Uno sguardo su: Il Piccolo Principe",
-    "date": "2025-11-9",
-    "author": "Alfredo Giannetto",
-    "url": "post.html?id=come-organizzare-un-viaggio-in-islanda",
-    "category": "Salute Mentale",
-    "image": "https://i.pinimg.com/736x/ef/b5/77/efb57703ec9f880df559df7990cdaff5.jpg"
-  },
-  {
     "title": "Inquietudine Santa",
     "date": "2025-11-9",
     "author": "Alfredo Giannetto",
@@ -129,9 +25,9 @@
   },
   {
     "title": "La bellezza del Gigante di Ferro",
-    "date": "2025-11-9",
+    "date": "2024-09-30",
     "author": "Alfredo Giannetto",
-    "url": "post.html?id=come-organizzare-un-viaggio-in-islanda",
+    "url": "post.html?id=bellezzagigantediferro",
     "category": "Salute Mentale",
     "image": "https://i.pinimg.com/originals/87/fe/81/87fe81324b98e56b9b5f86863cf98682.gif"
   }
