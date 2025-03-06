@@ -17,9 +17,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 return;
             }
 
-            // Riformatta la data in "DD ∙ MM ∙ YYYY"
+            // Formattazione della data in "DD Mon YYYY"
+            const monthNames = ["Gen", "Feb", "Mar", "Apr", "Mag", "Giu", "Lug", "Ago", "Set", "Ott", "Nov", "Dic"];
             const dateParts = post.date.split("-");
-            const formattedDate = `${dateParts[2]} ∙ ${dateParts[1]} ∙ ${dateParts[0]}`;
+            const day = dateParts[2];
+            const month = monthNames[parseInt(dateParts[1], 10) - 1];
+            const year = dateParts[0];
+            const formattedDate = `${day} ${month} ${year}`;
 
             document.getElementById("post-title").textContent = post.title;
             document.getElementById("post-author").textContent = post.category;
@@ -29,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const backgroundDiv = document.querySelector(".background");
             if (backgroundDiv && post.image) {
                 backgroundDiv.style.backgroundImage = `url('${post.image}')`;
-                backgroundDiv.style.backgroundPosition = post.backgroundPosition || "center center"; // Default se non specificato
+                backgroundDiv.style.backgroundPosition = post.backgroundPosition || "center center";
             } else {
                 console.warn("Elemento .background non trovato o immagine mancante");
             }
