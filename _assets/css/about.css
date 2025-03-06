@@ -24,7 +24,6 @@
     margin: auto;
 }
 .content .images{
-    overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
     display: flex;
@@ -37,11 +36,20 @@
     background-size: cover;
     background-position: center;
 }
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-200%);
+    }
+}
 .content .img-box{
     border: solid 1px var(--line-green);
     padding: 10px;
     border-radius: 2px;
     height: fit-content;
+    animation: scroll 100s linear infinite;
 }
 .content .img1{
     width: 300px;
