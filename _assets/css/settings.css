@@ -48,3 +48,6 @@ body {
   --light-green: #3f332c;
   --line-green: #5f554f;
 }
+img{
+  pointer-events: none;
+}
