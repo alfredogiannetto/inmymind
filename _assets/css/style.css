@@ -31,7 +31,7 @@ body{
 }
 @media screen and (max-width: 900px) {
   .website-title {
-    width: 2000px !important;
+    width: 3000px !important;
   }
 }
 
