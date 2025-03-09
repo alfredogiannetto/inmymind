@@ -57,7 +57,7 @@
     width: calc(100% -10px*2);
     padding: 10px;
     height: 400px;
-    background-image: url(../img/about/img1.JPG);
+    background-image: url(../img/about/img1.avif);
     background-size: cover;
     background-position: center;
 }
@@ -78,7 +78,7 @@
     width: calc(100% -10px*2);
     padding: 10px;
     height: 400px;
-    background-image: url(../img/about/img5.JPG);
+    background-image: url(../img/about/img2.avif);
     background-size: cover;
     background-position: center;
 }
