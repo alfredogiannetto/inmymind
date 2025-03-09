@@ -31,7 +31,8 @@ body{
 }
 @media screen and (max-width: 900px) {
   .website-title {
-    width: 3000px !important;
+    height: auto !important;
+    width: 100vw !important;
   }
 }
 
