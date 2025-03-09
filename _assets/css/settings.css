@@ -19,22 +19,7 @@
     url("../fonts/gambetta/Gambetta-LightItalic.woff2") format("woff2");
   font-style: normal;
 }
-@font-face {
-  font-family: "Piazzolla";
-  src: url("../fonts/Piazzolla-Regular.woff2") format("woff"),
-  url("../fonts/Piazzolla-Bold.woff2") format("woff"),
-  url("../fonts/Piazzolla-BoldItalic.woff2") format("woff"),
-  url("../fonts/Piazzolla-ExtraLight.woff2") format("woff"),
-  url("../fonts/Piazzolla-Italic.woff2") format("woff"),
-  url("../fonts/Piazzolla-Light.woff2") format("woff"),
-  url("../fonts/Piazzolla-LightItalic.woff2") format("woff"),
-  url("../fonts/Piazzolla-Medium.woff2") format("woff"),
-  url("../fonts/Piazzolla-MediumItalic.woff2") format("woff"),
-  url("../fonts/Piazzolla-SemiBold.woff2") format("woff"),
-  url("../fonts/Piazzolla-SemiBoldItalic.woff2") format("woff"),
-  url("../fonts/Piazzolla-Thin.woff2") format("woff"),
-  url("../fonts/Piazzolla-ThinItalic.woff2") format("woff"),
-}
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:ital,opsz,wght@0,8..30,100..900;1,8..30,100..900&display=swap');
 body {
   font-family: "Gambetta";
   text-rendering: optimizeLegibility;
