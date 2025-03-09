@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const backgroundImage = post.image ? `style="background-image: url('${post.image}'); background-size: cover; background-position: center;"` : "";
   
         postElement.innerHTML = `
-          <div class="image" ${backgroundImage}></div>
+          <a class="image-container" href="${post.url}"><div class="image" ${backgroundImage}></div></a>
           <div class="info">
             <p class="date">${formattedDate}</p>
             <p>∙</p>
