@@ -7,7 +7,6 @@ body{
   opacity: 100%;
   width: 100vw;
   background-image: url(../img/home/fild.gif);
-  filter: grayscale(1) contrast(1) brightness(1);
   background-size: cover;
   position: relative;
   display: flex;
@@ -20,7 +19,7 @@ body{
 }
 .website-title {
   cursor: default;
-  width: 3000px;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -448,3 +447,5 @@ select {
   transition: all 1s;
   max-height: 700px;
 }
+
+
