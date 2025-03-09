@@ -82,38 +82,6 @@
     background-size: cover;
     background-position: center;
 }
-.content .img3{
-    width: 300px;
-    padding: 10px;
-    height: 400px;
-    background-image: url(../img/about/img7.jpeg);
-    background-size: cover;
-    background-position: center;
-}
-.content .img4{
-    width: 300px;
-    padding: 10px;
-    height: 400px;
-    background-image: url(../img/about/img4.JPG);
-    background-size: cover;
-    background-position: center;
-}
-.content .img5{
-    width: 300px;
-    padding: 10px;
-    height: 400px;
-    background-image: url(../img/about/img5.JPG);
-    background-size: cover;
-    background-position: center;
-}
-.content .img6{
-    width: 300px;
-    padding: 10px;
-    height: 400px;
-    background-image: url(../img/about/img8.jpeg);
-    background-size: cover;
-    background-position: center;
-}
 .cv{
     color: white;
 }
