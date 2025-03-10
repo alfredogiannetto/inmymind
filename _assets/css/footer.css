@@ -1,31 +1,13 @@
-.content{
-  margin: 300px auto auto auto;
-
-}
-.coso{
-  white-space: nowrap;
-  font-size: 23px;
-  height: 80px;
-  width: calc(100vw - 100px);
-  overflow: hidden;
-  margin: auto;
-  border-bottom: solid 1px var(--line-green);
-  border-top: solid 1px var(--line-green);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .pie {
-  margin: auto;
-  width: calc(100vw - 140px);
+  margin: 300px auto auto auto;
+  width: calc(100vw - 180px);
   height: fit-content;
   background-color: var(--light-green);
   display: flex;
-  flex-direction: row;
-  align-items: end;
-  justify-content: space-between;
-  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 40px 50px 40px;
   gap: 50px;
 }
 @media screen and (max-width: 500px) {
@@ -40,9 +22,8 @@
   gap: 40px;
 }
 .pie .title {
-  height: 200px;
   font-family: "Piazzolla";
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
 }
 .pie .social {
@@ -50,11 +31,8 @@
   flex-direction: row;
   color: white;
   justify-content: center;
+  width: 100%;
   gap: 25px;
-}
-.social a{
-  text-decoration: none;
-  color: white;
 }
 .pie .privacy {
   display: flex;
@@ -97,18 +75,23 @@
   background-size: cover;
   background-position: center;
   display: block;
+  width: 21px;
   height: 21px;
 }
 #spotify{
+  background-image: url(../svg/spotify.svg);
   background-size: cover;
   background-position: center;
   display: block;
+  width: 21px;
   height: 21px;
 }
 #pinterest{
+  background-image: url(../svg/pinterest.svg);
   background-size: cover;
   background-position: center;
   display: block;
+  width: 21px;
   height: 21px;
 }
 #vinted{
@@ -120,8 +103,10 @@
   height: 21px;
 }
 #letterboxd{
+  background-image: url(../svg/letterboxd.svg);
   background-size: cover;
   background-position: center;
   display: block;
+  width: 28px;
   height: 22px;
 }

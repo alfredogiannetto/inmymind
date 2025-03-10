@@ -31,14 +31,11 @@
   }
 }
 .header .titolo {
-  background-image: url(../svg/logo.svg);
-  background-position: center;
-  background-size: cover;
-  height: 22px;
-  width: 22px;
   text-decoration: none;
+  font-size: 18px;
   color: white;
   font-family: "Piazzolla";
+  font-weight: 400;
 }
 .header .menu {
   display: flex;
