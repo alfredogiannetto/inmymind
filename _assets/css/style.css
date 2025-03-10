@@ -14,7 +14,7 @@ body{
   flex-direction: column;
   justify-content: end;
   font-size: 300px;
-  font-weight: 600;
+  font-weight: 400;
 }
 .website-title {
   cursor: default;
