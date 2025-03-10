@@ -6,7 +6,6 @@ body{
   height: 100vh;
   opacity: 100%;
   width: 100vw;
-  background-image: url(../img/home/fild.gif);
   background-size: cover;
   position: relative;
   display: flex;
